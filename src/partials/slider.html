@@ -1,0 +1,39 @@
+<!-- <section class="slider">
+
+  <h1>slider</h1>
+  <div id="slider-container"></div>
+
+  <script>
+    fetch('/partials/slider.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('slider-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading slider:', error));
+  </script>
+</section>
+
+
+<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'></div>
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+  <div><h3>6</h3></div>
+</div> -->
+
+<section class="slider multiple-items" data-sizes="50vw">
+  <div>
+    <img data-lazy="http://placehold.it/350x300?text=1-350w" alt="slide 1" />
+  </div>
+  <div>
+    <img data-lazy="http://placehold.it/350x300?text=2-350w" alt="slide 2" />
+  </div>
+  <div>
+    <img data-lazy="http://placehold.it/350x300?text=3-350w" alt="slide 3" />
+  </div>
+  <div>
+    <img data-lazy="http://placehold.it/350x300?text=4-350w" alt="slide 4" />
+  </div>
+</section>
