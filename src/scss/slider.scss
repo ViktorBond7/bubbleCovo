@@ -1,0 +1,43 @@
+.mobile-image {
+  width: auto;
+
+  @media (max-width: 1440px) {
+    width: 215px;
+  }
+  @media (max-width: 320px) {
+    width: 153px;
+  }
+}
+
+.slider {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+}
+
+.multiple-items {
+  position: relative; // Контейнер слайдера
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      width: 24px; // Ширина стрелки
+      height: auto;
+    }
+  }
+
+  .slick-prev {
+    left: 10px; // Отступ слева
+  }
+
+  .slick-next {
+    right: 10px; // Отступ справа
+  }
+}

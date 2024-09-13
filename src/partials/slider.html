@@ -14,16 +14,9 @@
 </section>
 
 
-<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'></div>
-  <div><h3>1</h3></div>
-  <div><h3>2</h3></div>
-  <div><h3>3</h3></div>
-  <div><h3>4</h3></div>
-  <div><h3>5</h3></div>
-  <div><h3>6</h3></div>
-</div> -->
 
-<section class="slider multiple-items" data-sizes="50vw">
+
+// <section class="slider multiple-items" data-sizes="50vw">
   <div>
     <img data-lazy="http://placehold.it/350x300?text=1-350w" alt="slide 1" />
   </div>
@@ -35,5 +28,94 @@
   </div>
   <div>
     <img data-lazy="http://placehold.it/350x300?text=4-350w" alt="slide 4" />
+  </div>
+</section> -->
+
+<!-- <section class="slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+  <div><h3>1</h3></div>
+  <div><h3>2</h3></div>
+  <div><h3>3</h3></div>
+  <div><h3>4</h3></div>
+  <div><h3>5</h3></div>
+  <div><h3>6</h3></div>
+</section> -->
+<section class="container slider">
+  <h2>Gallery</h2>
+  <p>
+    Immerse yourself in the beautiful, frosty landscapes of Ice Crush 2 and
+    experience the magic of winter with every match!
+  </p>
+  <div class="slider multiple-items">
+    <picture>
+      <source
+        srcset="/public/photo_1.png 1x, /public/photo_1-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_1.png 1x, /public/photo_1-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_1.png" alt="Example Image" class="mobile-image" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/public/photo_2.png 1x, /public/photo_2-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_2.png 1x, /public/photo_2-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_2.png" alt="Example Image" class="mobile-image" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/public/photo_3.png 1x, /public/photo_3-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_3.png 1x, /public/photo_3-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_3.png" alt="Example Image" class="mobile-image" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/public/photo_4.png 1x, /public/photo_4-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_4.png 1x, /public/photo_4-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_4.png" alt="Example Image" class="mobile-image" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/public/photo_5.png 1x, /public/photo_5-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_5.png 1x, /public/photo_5-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_5.png" alt="Example Image" class="mobile-image" />
+    </picture>
+
+    <picture>
+      <source
+        srcset="/public/photo_6.png 1x, /public/photo_6-2x.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/public/photo_6.png 1x, /public/photo_6-2x.png 2x"
+        media="(min-width: 320px)"
+      />
+      <img src="/public/photo_6.png" alt="Example Image" class="mobile-image" />
+    </picture>
   </div>
 </section>
