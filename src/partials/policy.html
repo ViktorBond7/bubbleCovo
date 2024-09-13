@@ -1,6 +1,28 @@
-<section>
-  <a href="./index.html">Home page</a>
-  <h1>Privacy Policy</h1>
+<section class="container">
+  <a href="../index.html">Home page</a>
+  <div class="bubble small"></div>
+  <div>
+    <!-- <picture>
+                <source
+                  srcset="
+                    /public/bubble-1x.png 1x,
+                    /public/bubble-2x.png 2x
+                  "
+                  media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="
+                    /public/bubble-1x.png 1x,
+                    /public/bubble-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="/public/bubble.jpg" alt="bubble" />
+              </picture> -->
+
+    <h1>Privacy Policy</h1>
+  </div>
+
   <ul>
     <li>
       This privacy policy will explain how our organization uses the personal
@@ -17,10 +39,23 @@
   </ul>
   <h2>Marketing</h2>
   <ul>
-    <li>
-      You have the right at any time to stop Joygamebliss.com contacting you for
-      marketing purposes
-    </li>
+    <div>
+      <li>
+        You have the right at any time to stop Joygamebliss.com contacting you
+        for marketing purposes
+      </li>
+      <picture>
+        <source
+          srcset="/public/bubble-1x.png 1x, /public/bubble-2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/public/bubble-1x.png 1x, /public/bubble-2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img src="/public/bubble.jpg" alt="bubble" />
+      </picture>
+    </div>
     <li>
       Joygamebliss.com would like to send you information about products and
       services of ours that we think you might like, as well as those of our
@@ -75,23 +110,40 @@
     Joygamebliss.com keeps its privacy policy under regular review and places
     any updates on this web page.
   </p>
-   <u>
-    <li class="item"><a href="/policy.html" class="link">Privacy policy</a></li>
-    <p>/</p>
+  <picture>
+    <source
+      srcset="/public/bubble-1x.png 1x, /public/bubble-2x.png 2x"
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="/public/bubble-1x.png 1x, /public/bubble-2x.png 2x"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="/public/bubble-1x.png 1x, /public/bubble-2x.png 2x"
+      media="(min-width: 320px)"
+    />
+    <img src="/public/bubble.jpg" alt="bubble" />
+  </picture>
+
+  <!-- <ul>
     <li class="item">
-      <a href="/terms.html" class="link">Terms and conditions</a>
+      <a href="../partials/policy.html" class="link">Privacy policy</a>
+    </li>
+    <span> / </span>
+    <li class="item">
+      <a href="../partials/terms.html" class="link">Terms and conditions</a>
     </li>
   </ul>
-  <p>All rights reserved joygamebliss.com | 2024</p>
-
-  <!-- <div id="footer"></div>
+  <p>All rights reserved joygamebliss.com | 2024</p> -->
+  <section class="footer" id="footer"></section>
 
   <script>
-    fetch('footer.html')
+    fetch('/partials/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
-  </script> -->
+  </script>
 </section>
