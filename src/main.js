@@ -1,3 +1,6 @@
+import './slider.js';
+import './js/mobile-menu.js';
+
 // import './slider.js';
 $('.multiple-items').slick({
   dots: true,
