@@ -1,17 +1,75 @@
-.mobile-image {
-  width: auto;
-
-  @media (max-width: 1440px) {
-    width: 215px;
-  }
-  @media (max-width: 320px) {
-    width: 153px;
-  }
-}
-
 .slider {
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+  text-align: center; // Центрируем заголовок и текст
+  color: white;
+
+  .multiple-items {
+    display: flex;
+    justify-content: center; // Центрируем слайды
+    align-items: center;
+    flex-wrap: nowrap; // Не переносить элементы на следующую строку
+
+    @media (max-width: 320px) {
+      h2 {
+        padding-top: 32px;
+        padding-bottom: 8px;
+
+        //styleName: mobile-fonts-styles/headline-2(mobile);
+        font-family: Baloo Chettan;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34.56px;
+        text-align: center;
+      }
+
+      p {
+        padding-bottom: 18px;
+      }
+
+      picture {
+        margin: 0 10px; // Отступы между слайдами
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 153px; // Изображения на мобильной версии
+      }
+
+      //     .multiple-items {
+      //   flex-direction: row;
+      //   justify-content: center;
+
+      // }
+    }
+
+    @media (max-width: 320px) {
+      // .multiple-items {
+      //   flex-direction: row;
+      //   justify-content: center;
+
+      //   img {
+      //     width: 153px; // Изображения на мобильной версии
+      //   }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .multiple-items {
+    }
+  }
 }
+
+// .slider-header {
+//   color: white;
+
+//   @media (max-width: 1440px) {
+//   }
+
+//   @media (max-width: 320px) {
+//   }
+// }
 
 .multiple-items {
   position: relative; // Контейнер слайдера
@@ -39,5 +97,40 @@
 
   .slick-next {
     right: 10px; // Отступ справа
+  }
+
+  @media (max-width: 1440px) {
+    .slick-prev,
+    .slick-next {
+      img {
+        width: 20px; // Изменение размера стрелок для экранов до 1440px
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .slick-prev,
+    .slick-next {
+      display: block; // Убрать нижние кнопки прокрутки, оставив боковые
+      img {
+        width: 18px; // Изменение размера стрелок для экранов до 320px
+      }
+    }
+
+    .slick-dots {
+      display: none; // Скрыть нижние точки прокрутки для экранов до 320px
+    }
+  }
+}
+
+.mobile-image {
+  width: auto;
+
+  @media (max-width: 1440px) {
+    width: 215px; // Ширина для экранов до 1440px
+  }
+
+  @media (max-width: 320px) {
+    width: 153px; // Ширина для экранов до 320px
   }
 }
