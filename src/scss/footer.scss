@@ -23,3 +23,13 @@
   padding-left: 4px;
   padding-right: 4px;
 }
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    padding-top: 96px;
+    padding-bottom: 98px;
+  }
+}
