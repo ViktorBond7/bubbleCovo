@@ -16,10 +16,14 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     
-    
-    
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/bubbleCovo/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/bubbleCovo/assets/index-ee591377.css">
+    <link rel="modulepreload" crossorigin href="/bubbleCovo/assets/vendor-6b8121bd.js">
+    <link rel="stylesheet" href="/bubbleCovo/assets/index-05f959f2.css">
   </head>
   <body>
     <header class="header container">
@@ -84,85 +88,42 @@
       experience the magic of winter with every match!
     </p>
   </div>
-  <div class="multiple-items">
-    <!-- <img src="${photo1}" alt="Example Image" class="mobile-image" />
-    <img src="${photo2}" alt="Example Image" class="mobile-image" />
-    <img src="${photo3}" alt="Example Image" class="mobile-image" />
-    <img src="${photo4}" alt="Example Image" class="mobile-image" />
-    <img src="${photo5}" alt="Example Image" class="mobile-image" />
-    <img src="${photo6}" alt="Example Image" class="mobile-image" /> -->
 
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-1-d2059b53.png 1x, /bubbleCovo/assets/photo-1-2x-952a1312.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-1-d2059b53.png 1x, /bubbleCovo/assets/photo-1-2x-952a1312.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-1-d2059b53.png" alt="Example Image" class="mobile-image" />
-    </picture>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-1-d2059b53.png" alt="photo-1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-2-36d112f9.png" alt="photo-1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-3-3417c1d4.png" alt="photo-1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-4-8d6d10c1.png" alt="photo-1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-5-4a6d30ef.png" alt="photo-1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/bubbleCovo/assets/photo-6-991a2cd6.png" alt="photo-1" />
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-2-36d112f9.png 1x, /bubbleCovo/assets/photo-2-2x-3d198b6d.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-2-36d112f9.png 1x, /bubbleCovo/assets/photo-2-2x-3d198b6d.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-2-36d112f9.png" alt="Example Image" class="mobile-image" />
-    </picture>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-3-3417c1d4.png 1x, /bubbleCovo/assets/photo-3-2x-bfc74565.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-3-3417c1d4.png 1x, /bubbleCovo/assets/photo-3-2x-bfc74565.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-3-3417c1d4.png" alt="Example Image" class="mobile-image" />
-    </picture>
-
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-4-8d6d10c1.png 1x, /bubbleCovo/assets/photo-4-2x-566ea601.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-4-8d6d10c1.png 1x, /bubbleCovo/assets/photo-4-2x-566ea601.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-4-8d6d10c1.png" alt="Example Image" class="mobile-image" />
-    </picture>
-
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-5-4a6d30ef.png 1x, /bubbleCovo/assets/photo-5-4a6d30ef.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-5-4a6d30ef.png 1x, /bubbleCovo/assets/photo-5-4a6d30ef.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-5-4a6d30ef.png" alt="Example Image" class="mobile-image" />
-    </picture>
-
-    <picture>
-      <source
-        srcset="/bubbleCovo/assets/photo-6-991a2cd6.png 1x, /bubbleCovo/assets/photo-6-2x-12db3eb9.png 2x"
-        media="(min-width: 1440px)"
-      />
-      <source
-        srcset="/bubbleCovo/assets/photo-6-991a2cd6.png 1x, /bubbleCovo/assets/photo-6-2x-12db3eb9.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="/bubbleCovo/assets/photo-6-991a2cd6.png" alt="Example Image" class="mobile-image" />
-    </picture>
+    <!-- <div class="custom-pagination"></div>
+      <span class="custom-dot" data-index="1"></span>
+      <span class="custom-dot" data-index="2"></span>
+      <span class="custom-dot" data-index="3"></span>
+    </div> -->
   </div>
 </section>
 
@@ -264,18 +225,7 @@
 </div>
 
 
-    <script
-      type="text/javascript"
-      src="http://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
   </body>
 </html>
