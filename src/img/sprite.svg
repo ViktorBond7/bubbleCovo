@@ -1,13 +1,27 @@
-<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-chevron-left" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.765" d="m20 24-8-8 8-8"/>
-    </symbol>
-    <symbol id="icon-clouse" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.909" d="M24 8 8 24M8 8l16 16"/>
-    </symbol>
     <symbol id="icon-burger-menu" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-width="2.909" d="M5.818 7.273h20.364M5.818 14.545h20.364M5.818 21.818h20.364"/>
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 17 32">
+      <path fill="none" stroke="#f2ff62" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.706" d="m5.782 27.608 5.154-9.412-5.154-9.412" style="stroke:var(--color1, #f2ff62)"/>
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 11 32">
+      <path fill="none" stroke="#f2ff62" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.934" d="m7.756 7.344-4.309 7.869 4.309 7.869" style="stroke:var(--color1, #f2ff62)"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.909" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+    <symbol id="icon-come-back-polycy-_-terms" viewBox="0 0 32 32">
+      <path fill="none" stroke="#f2ff62" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.765" d="m20 24-8-8 8-8" style="stroke:var(--color1, #f2ff62)"/>
+    </symbol>
+    <symbol id="icon-minus" viewBox="0 0 32 32">
+      <path d="M0 0h32v32H0V0z"/>
+      <path d="M10.355 15.68a.92.92 0 0 0 0 1.84h11.833a.92.92 0 0 0 0-1.84H10.355z"/>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 32 32">
+      <path fill="#f2ff62" d="M0 0h32v32H0V0z" style="fill:var(--color1, #f2ff62)"/>
+      <path fill="none" stroke="#8747ff" stroke-linecap="round" stroke-width="1.6" d="M16 23.2V8.8m7.2 7.2H8.8" style="stroke:var(--color2, #8747ff)"/>
     </symbol>
   </defs>
 </svg>
