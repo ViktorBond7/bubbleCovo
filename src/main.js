@@ -1,3 +1,3 @@
 import './js/mobile-menu.js';
 
-import './slider.js';
+import './js/slider.js';
