@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
+  background-color: $_background-color;
   @include media(desktop) {
     max-width: 1440px;
     padding-left: 70px;

@@ -4,6 +4,10 @@
   padding-top: 44px;
   z-index: 999;
   align-items: center;
+
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
 }
 
 .logo {
@@ -46,4 +50,7 @@
   @include media(desktop) {
     display: none;
   }
+}
+.burger-svg {
+  stroke: #1e1e1e;
 }
