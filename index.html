@@ -23,7 +23,7 @@
     />
     <script type="module" crossorigin src="/bubbleCovo/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/bubbleCovo/assets/vendor-6b8121bd.js">
-    <link rel="stylesheet" href="/bubbleCovo/assets/index-3dc7fca3.css">
+    <link rel="stylesheet" href="/bubbleCovo/assets/index-3c42865d.css">
   </head>
   <body>
     <header class="header container">
@@ -66,7 +66,7 @@
   </nav>
   <div class="header-burger">
     <svg class="burger-svg" width="44" height="44" aria-label="">
-      <use href="/bubbleCovo/assets/sprite-e1576512.svg#icon-burger-menu"></use>
+      <use href="/bubbleCovo/assets/sprite-8d2493d5.svg#icon-burger-menu"></use>
     </svg>
   </div>
 </header>
@@ -185,7 +185,47 @@
 </section>
 
 
-    
+    <section class="faq container">
+  <h2>FAQ</h2>
+  <ul>
+    <li>
+      <span>How can I compete with friends?</span>
+      <svg
+        id="toggleSvg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        style="cursor: pointer"
+        onclick="toggleText()"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="black"
+          stroke-width="2"
+          fill="white"
+        />
+        <text
+          id="svgText"
+          x="12"
+          y="16"
+          font-size="16"
+          text-anchor="middle"
+          fill="black"
+        >
+          +
+        </text>
+      </svg>
+    </li>
+    <li id="extraText" style="display: none">
+      Connect the game to social media to compare scores with friends.
+    </li>
+  </ul>
+
+  <script src="script.js"></script>
+</section>
+
 
     <footer class="footer container">
   <ul class="footer__links">
@@ -221,7 +261,7 @@
 
       <div class="mobile-menu-close">
         <svg class="burger-svg" width="44" height="44" aria-label="">
-          <use href="/bubbleCovo/assets/sprite-e1576512.svg#icon-clouse"></use>
+          <use href="/bubbleCovo/assets/sprite-8d2493d5.svg#icon-clouse"></use>
         </svg>
       </div>
     </div>
