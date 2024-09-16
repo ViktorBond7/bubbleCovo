@@ -19,8 +19,6 @@
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    // padding-left: 182px;
-    // padding-right: 182px;
   }
 }
 
@@ -109,7 +107,6 @@
   }
   .policy-item {
     padding-bottom: 24px;
-    //styleName: desctop-fonts-styles/body-text-regular-18px;
     font-family: Chivo;
     font-size: 18px;
     font-weight: 400;
@@ -147,7 +144,7 @@
 .bubble-img-litle-home {
   position: absolute;
   top: 29%;
-  left: 68%; /* Використовуємо 50%, щоб центрувати */
+  left: 68%;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
@@ -176,8 +173,7 @@
 .bubble-img-litle-home-2 {
   position: absolute;
   top: 97%;
-  left: 5%; /* Використовуємо 50%, щоб центрувати */
-
+  left: 5%;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
