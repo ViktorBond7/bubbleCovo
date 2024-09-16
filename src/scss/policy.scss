@@ -99,7 +99,7 @@ h3 {
   padding-bottom: 41px;
 }
 
-.footer__links {
+.footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +107,14 @@ h3 {
   cursor: pointer;
 }
 
-.item {
+.footer-link {
   padding-left: 4px;
   padding-right: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
 }
 
 @media screen and (min-width: 1440px) {
