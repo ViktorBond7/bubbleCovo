@@ -19,8 +19,6 @@
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    padding-left: 70px;
-    padding-right: 70px;
   }
 }
 
@@ -72,8 +70,49 @@
 
 @media screen and (min-width: 1440px) {
   .policy {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 182px;
+    padding-right: 182px;
+  }
+  .policy-title {
+    padding-bottom: 60px;
+  }
+
+  .policy .policy-subtitle:not(:last-child) {
+    padding-bottom: 60px;
+    max-width: 100%;
+  }
+
+  .policy .policy-subtitle:last-child {
+    padding-bottom: 18px;
+  }
+
+  .policy-list {
+    padding-bottom: 80px;
+  }
+
+  .policy-title {
+    font-family: Cherry Bomb;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+  }
+
+  .policy-subtitle {
+    font-family: Baloo Chettan;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: center;
+  }
+  .policy-item {
+    padding-bottom: 24px;
+    font-family: Chivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 }
 
@@ -86,8 +125,8 @@
   opacity: 0.4;
   width: 104px;
   @include media(desktop) {
-    top: 14px;
-    left: 54px;
+    top: 6%;
+    left: 1%;
     width: 282px;
   }
 }
@@ -100,17 +139,12 @@
   z-index: 1;
   opacity: 0.4;
   width: 104px;
-  @include media(desktop) {
-    top: 14px;
-    left: 54px;
-    width: 282px;
-  }
 }
 
 .bubble-img-litle-home {
   position: absolute;
   top: 29%;
-  left: 68%; /* Використовуємо 50%, щоб центрувати */
+  left: 68%;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
@@ -123,21 +157,23 @@
 .bubble-img-litle-home-1 {
   position: absolute;
   top: 64%;
-  left: 84%; /* Використовуємо 50%, щоб центрувати */
+  left: 84%;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
 
   @include media(desktop) {
-    opacity: 0;
+    opacity: 0.4;
+    width: 150px;
+    top: 96%;
+    left: 70%;
   }
 }
 
 .bubble-img-litle-home-2 {
   position: absolute;
   top: 97%;
-  left: 5%; /* Використовуємо 50%, щоб центрувати */
-
+  left: 5%;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
