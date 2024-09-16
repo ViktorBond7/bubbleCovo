@@ -1,4 +1,6 @@
 .policy {
+  position: relative;
+
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
@@ -6,6 +8,8 @@
 }
 
 .container {
+  overflow: hidden;
+
   max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -20,9 +24,10 @@
   }
 }
 
-.back {
+.policy-homeback {
   display: flex;
   gap: 10px;
+  padding-bottom: 32px;
 }
 
 .chevron {
@@ -31,7 +36,7 @@
   justify-content: center;
 }
 
-h2 {
+.policy-title {
   font-family: Cherry Bomb;
   font-size: 36px;
   font-weight: 400;
@@ -41,31 +46,28 @@ h2 {
   padding-bottom: 24px;
 }
 
-h3 {
+.policy-subtitle {
   font-family: Baloo Chettan;
   font-size: 24px;
   font-weight: 400;
   line-height: 34.56px;
   text-align: center;
-  color: #1e1e1e;
+
   padding-bottom: 18px;
+  max-width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.policy-subtitle-home {
 }
 
 .policy-list {
   padding-bottom: 24px;
 }
-.picture {
-}
 
 .policy-item {
   padding-bottom: 12px;
-}
-
-.policy-bubble {
-  background-image: url('/public/bubble-1x.png');
-  background-size: contain;
-  width: 281px;
-  height: 281px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -73,16 +75,75 @@ h3 {
     padding-left: 70px;
     padding-right: 70px;
   }
+}
 
-  .bubble.large {
-    width: 281px;
-    height: 281px;
+.bubble-img-home {
+  position: absolute;
+  top: 90px;
+
+  left: 10%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 104px;
+  @include media(desktop) {
+    top: 14px;
+    left: 54px;
+    width: 282px;
   }
+}
 
-  .bubble.small {
-    width: 174px;
-    height: 174px;
-    background-image: url('/public/bubble-1x.png');
+.bubble-img-home-1 {
+  position: absolute;
+  top: 50%;
+
+  left: -10%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 104px;
+  @include media(desktop) {
+    top: 14px;
+    left: 54px;
+    width: 282px;
+  }
+}
+
+.bubble-img-litle-home {
+  position: absolute;
+  top: 29%;
+  left: 68%; /* Використовуємо 50%, щоб центрувати */
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0;
+  }
+}
+
+.bubble-img-litle-home-1 {
+  position: absolute;
+  top: 64%;
+  left: 84%; /* Використовуємо 50%, щоб центрувати */
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0;
+  }
+}
+
+.bubble-img-litle-home-2 {
+  position: absolute;
+  top: 97%;
+  left: 5%; /* Використовуємо 50%, щоб центрувати */
+
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0;
   }
 }
 
@@ -114,8 +175,8 @@ h3 {
   align-items: center;
 }
 
-.footer-item {
-}
+// .footer-item {
+// }
 
 @media screen and (min-width: 1440px) {
   .footer {
