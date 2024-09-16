@@ -1,13 +1,13 @@
 .container-home {
-  // display: flex;
-  // margin-top: 68px;
   padding-top: 42px;
+  padding-bottom: 60px;
   height: 536px;
   position: relative;
   @include media(desktop) {
     display: flex;
     height: 700px;
     padding-top: 68px;
+    padding-bottom: 66px;
   }
 }
 
@@ -21,6 +21,8 @@
     order: 2;
     max-width: 552px;
     height: 578px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .container-title-button-home {
@@ -33,10 +35,11 @@
   padding-top: 28px;
   @include media(desktop) {
     order: 1;
-    max-width: 556px;
+    max-width: 500px;
     height: 302px;
     padding-top: 124px;
     margin-left: 42px;
+    margin-right: 162px;
   }
 }
 .link-google-play {
@@ -44,7 +47,6 @@
   max-width: 134px;
   height: 40px;
   justify-content: center;
-  // padding-bottom: 60px;
   align-self: center;
   padding-top: 28px;
   @include media(desktop) {
@@ -72,7 +74,6 @@
   z-index: 1;
   opacity: 0.4;
   width: 104px;
-  // max-width: none;
   @include media(desktop) {
     top: 14px;
     left: 54px;
