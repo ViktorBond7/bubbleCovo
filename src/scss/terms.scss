@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-h1 {
+h2 {
   font-family: Cherry Bomb;
   font-size: 36px;
   font-weight: 400;
@@ -41,7 +41,7 @@ h1 {
   padding-bottom: 24px;
 }
 
-h2 {
+h3 {
   font-family: Baloo Chettan;
   font-size: 24px;
   font-weight: 400;
@@ -51,18 +51,13 @@ h2 {
   padding-bottom: 18px;
 }
 
-ul {
+.terms-list {
   padding-bottom: 24px;
 }
 
-// ul:first-of-type li {
-//   padding-bottom: 18px;
-// }
-
-// /* Для всех остальных ul: расстояние между li 18px */
-// ul:not(:first-of-type) li {
-//   padding-bottom: 12px;
-// }
+.terms-item {
+  padding-bottom: 12px;
+}
 
 .bubble {
   background-image: url('/public/bubble-1x.png');
@@ -102,7 +97,7 @@ ul {
   padding-bottom: 41px;
 }
 
-.footer__links {
+.footer-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,9 +105,14 @@ ul {
   cursor: pointer;
 }
 
-.item {
+.footer-link {
   padding-left: 4px;
   padding-right: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item {
 }
 
 @media screen and (min-width: 1440px) {
