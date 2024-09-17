@@ -5,20 +5,20 @@
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 }
 
-.container {
-  max-width: 320px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+// .container {
+//   max-width: 320px;
+//   margin: 0 auto;
+//   padding-left: 16px;
+//   padding-right: 16px;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
 
-  @media screen and (min-width: 1440px) {
-    max-width: 1440px;
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
+//   @media screen and (min-width: 1440px) {
+//     max-width: 1440px;
+//     padding-left: 70px;
+//     padding-right: 70px;
+//   }
+// }
 
 .back {
   display: flex;

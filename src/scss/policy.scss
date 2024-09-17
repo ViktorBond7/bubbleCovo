@@ -5,20 +5,17 @@
   padding-left: 18px;
   padding-right: 18px;
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
-}
-
-.container {
-  overflow: hidden;
 
   max-width: 320px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1440px) {
+  padding-left: 18px;
+  padding-right: 18px;
+  // background-color: $_background-color;
+  @include media(desktop) {
     max-width: 1440px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 100px;
   }
 }
 
@@ -45,7 +42,7 @@
 // }
 
 .policy-title {
-  font-family: $_font_size_cherry; // Использование переменной для font-family
+  font-family: 'Cherry Bomb One'; // Использование переменной для font-family
   font-size: 36px; // Размер шрифта
   font-weight: 400; // Толщина шрифта
   line-height: 36px; // Высота строки
@@ -55,7 +52,7 @@
 }
 
 .policy-subtitle {
-  font-family: Baloo Chettan;
+  font-family: 'Baloo Chettan';
   font-size: 24px;
   font-weight: 400;
   line-height: 34.56px;
@@ -67,8 +64,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.policy-subtitle-home {
-  font-family: Chivo;
+.policy-home {
+  font-family: 'Chivo';
   font-size: 20px;
   font-weight: 600;
   line-height: 27px;
@@ -90,6 +87,11 @@
     padding-right: 182px;
   }
   .policy-title {
+    font-family: 'Cherry Bomb One';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
     padding-bottom: 60px;
   }
 
@@ -97,8 +99,8 @@
     width: 10px;
     gap: 10px;
   }
-  .policy-subtitle-home {
-    font-family: Chivo;
+  .policy-home {
+    font-family: 'Chivo';
     font-size: 24px;
     font-weight: 600;
     line-height: 27px;
@@ -120,7 +122,7 @@
   }
 
   .policy-title {
-    font-family: Cherry Bomb;
+    font-family: 'Cherry Bomb';
     font-size: 72px;
     font-weight: 400;
     line-height: 72px;
@@ -128,7 +130,7 @@
   }
 
   .policy-subtitle {
-    font-family: Baloo Chettan;
+    font-family: 'Baloo Chettan';
     font-size: 40px;
     font-weight: 400;
     line-height: 57.6px;
@@ -136,7 +138,7 @@
   }
   .policy-item {
     padding-bottom: 24px;
-    font-family: Chivo;
+    font-family: 'Chivo';
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -154,8 +156,8 @@
   opacity: 0.4;
   width: 104px;
   @include media(desktop) {
-    top: 6%;
-    left: 1%;
+    top: 7%;
+    left: 4%;
     width: 282px;
   }
 }
@@ -214,7 +216,7 @@
 
 .footer {
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
-  font-family: Chivo;
+  font-family: 'Chivo';
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -223,6 +225,12 @@
   color: #efefef;
   padding-top: 41px;
   padding-bottom: 41px;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: $_background-color;
 }
 
 .footer-list {
@@ -250,5 +258,9 @@
     letter-spacing: 0.02em;
     padding-top: 96px;
     padding-bottom: 98px;
+
+    max-width: 1440px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
