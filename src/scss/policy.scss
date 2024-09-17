@@ -1,4 +1,6 @@
 .policy {
+  position: relative;
+
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
@@ -6,6 +8,8 @@
 }
 
 .container {
+  overflow: hidden;
+
   max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -15,14 +19,13 @@
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    padding-left: 70px;
-    padding-right: 70px;
   }
 }
 
-.back {
+.policy-homeback {
   display: flex;
   gap: 10px;
+  padding-bottom: 32px;
 }
 
 .chevron {
@@ -31,58 +34,181 @@
   justify-content: center;
 }
 
-h2 {
-  font-family: Cherry Bomb;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: center;
-  color: #f2ff62;
-  padding-bottom: 24px;
+// .policy-title {
+//   font-family: $_font_size_cherry;
+//   font-size: 36px;
+//   font-weight: 400;
+//   line-height: 36px;
+//   text-align: center;
+//   color: #f2ff62;
+//   padding-bottom: 24px;
+// }
+
+.policy-title {
+  font-family: $_font_size_cherry; // Использование переменной для font-family
+  font-size: 36px; // Размер шрифта
+  font-weight: 400; // Толщина шрифта
+  line-height: 36px; // Высота строки
+  text-align: center; // Выравнивание по центру
+  color: #f2ff62; // Цвет текста
+  padding-bottom: 24px; // Отступ снизу
 }
 
-h3 {
+.policy-subtitle {
   font-family: Baloo Chettan;
   font-size: 24px;
   font-weight: 400;
   line-height: 34.56px;
   text-align: center;
-  color: #1e1e1e;
+
   padding-bottom: 18px;
+  max-width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.policy-subtitle-home {
+  font-family: Chivo;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .policy-list {
   padding-bottom: 24px;
-}
-.picture {
 }
 
 .policy-item {
   padding-bottom: 12px;
 }
 
-.policy-bubble {
-  background-image: url('/public/bubble-1x.png');
-  background-size: contain;
-  width: 281px;
-  height: 281px;
-}
-
 @media screen and (min-width: 1440px) {
   .policy {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 182px;
+    padding-right: 182px;
+  }
+  .policy-title {
+    padding-bottom: 60px;
   }
 
-  .bubble.large {
-    width: 281px;
-    height: 281px;
+  .chevron {
+    width: 10px;
+    gap: 10px;
+  }
+  .policy-subtitle-home {
+    font-family: Chivo;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
-  .bubble.small {
-    width: 174px;
-    height: 174px;
-    background-image: url('/public/bubble-1x.png');
+  .policy .policy-subtitle:not(:last-child) {
+    padding-bottom: 60px;
+    max-width: 100%;
+  }
+
+  .policy .policy-subtitle:last-child {
+    padding-bottom: 18px;
+  }
+
+  .policy-list {
+    padding-bottom: 80px;
+  }
+
+  .policy-title {
+    font-family: Cherry Bomb;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+  }
+
+  .policy-subtitle {
+    font-family: Baloo Chettan;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: center;
+  }
+  .policy-item {
+    padding-bottom: 24px;
+    font-family: Chivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+
+.bubble-img-home {
+  position: absolute;
+  top: 90px;
+
+  left: 10%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 104px;
+  @include media(desktop) {
+    top: 6%;
+    left: 1%;
+    width: 282px;
+  }
+}
+
+.bubble-img-home-1 {
+  position: absolute;
+  top: 50%;
+
+  left: -10%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 104px;
+}
+
+.bubble-img-litle-home {
+  position: absolute;
+  top: 29%;
+  left: 68%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0;
+  }
+}
+
+.bubble-img-litle-home-1 {
+  position: absolute;
+  top: 64%;
+  left: 84%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0.4;
+    width: 150px;
+    top: 96%;
+    left: 70%;
+  }
+}
+
+.bubble-img-litle-home-2 {
+  position: absolute;
+  top: 97%;
+  left: 5%;
+  z-index: 1;
+  opacity: 0.4;
+  width: 70px;
+
+  @include media(desktop) {
+    opacity: 0;
   }
 }
 
@@ -114,8 +240,8 @@ h3 {
   align-items: center;
 }
 
-.footer-item {
-}
+// .footer-item {
+// }
 
 @media screen and (min-width: 1440px) {
   .footer {
