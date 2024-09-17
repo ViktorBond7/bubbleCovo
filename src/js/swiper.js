@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-carousel', {
-    slidesPerView: 1,
+    slidesPerView: 0.9,
     slidesPerGroup: 1,
     // centeredSlides: true,
     loop: false,
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 500,
     breakpoints: {
       1440: {
-        slidesPerView: 4,
+        slidesPerView: 3.9,
         spaceBetween: 10,
         // centeredSlides: 1,
         pagination: {
