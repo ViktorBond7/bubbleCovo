@@ -2,14 +2,66 @@
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 }
 
-// .toggle {
-// }
-
 .icon {
-  width: 24;
-  height: 24;
-  fill: currentColor;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
+  fill: currentColor;
 }
 
-// <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="white"/>
+/* Стиль для кнопки с плюсом */
+.plus-style rect {
+  position: relative;
+  fill: #f2ff62;
+  width: 32px;
+  height: 32px;
+
+  rx: 0;
+}
+
+.plus-style text {
+  position: absolute;
+  top: 50%; /* Выравниваем по вертикали */
+  left: 50%;
+  transform: translate(-20%, 16%);
+  fill: #8747ff;
+  font-size: 16px;
+}
+
+/* Стиль для кнопки с минусом */
+.minus-style rect {
+  position: relative;
+  fill: #8747ff;
+
+  rx: 4;
+}
+
+.minus-style text {
+  position: absolute;
+  top: 50%; /* Выравниваем по вертикали */
+  left: 50%;
+  transform: translate(-14%, 10%);
+  fill: #5d24c6;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .plus-style rect {
+    width: 40px;
+    height: 40px;
+  }
+
+  .plus-style text {
+    font-size: 16px;
+  }
+
+  /* Стиль для кнопки с минусом */
+  .minus-style rect {
+    // width: 40px;
+    // height: 40px;
+  }
+
+  .minus-style text {
+    font-size: 16px;
+  }
+}
