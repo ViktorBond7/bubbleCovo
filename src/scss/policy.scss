@@ -34,14 +34,24 @@
   justify-content: center;
 }
 
+// .policy-title {
+//   font-family: $_font_size_cherry;
+//   font-size: 36px;
+//   font-weight: 400;
+//   line-height: 36px;
+//   text-align: center;
+//   color: #f2ff62;
+//   padding-bottom: 24px;
+// }
+
 .policy-title {
-  font-family: Cherry Bomb;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: center;
-  color: #f2ff62;
-  padding-bottom: 24px;
+  font-family: $_font_size_cherry; // Использование переменной для font-family
+  font-size: 36px; // Размер шрифта
+  font-weight: 400; // Толщина шрифта
+  line-height: 36px; // Высота строки
+  text-align: center; // Выравнивание по центру
+  color: #f2ff62; // Цвет текста
+  padding-bottom: 24px; // Отступ снизу
 }
 
 .policy-subtitle {
@@ -58,6 +68,12 @@
   margin-right: auto;
 }
 .policy-subtitle-home {
+  font-family: Chivo;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .policy-list {
@@ -75,6 +91,19 @@
   }
   .policy-title {
     padding-bottom: 60px;
+  }
+
+  .chevron {
+    width: 10px;
+    gap: 10px;
+  }
+  .policy-subtitle-home {
+    font-family: Chivo;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: left;
   }
 
   .policy .policy-subtitle:not(:last-child) {
