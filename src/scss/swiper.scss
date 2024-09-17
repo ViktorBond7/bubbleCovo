@@ -1,0 +1,134 @@
+.swiper {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+  text-align: center;
+  position: relative;
+  margin-bottom: 32px; /* Додано внутрішній відступ */
+}
+
+.swiper-title {
+  margin-top: 32px;
+  padding-bottom: 8px;
+  font-family: 'Baloo Chettan';
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.swiper-description {
+  font-family: Chivo;
+  font-size: 12px;
+  color: #efefef;
+  max-width: 260px;
+  margin: 0 auto;
+  padding-bottom: 18px;
+}
+
+.swiper-carousel {
+  display: flex;
+  padding-bottom: 32px;
+}
+.swiper-wrapper {
+  display: flex; /* Залишаємо display: flex для контейнера слайдів */
+
+  // padding-bottom: 32px; /* Додано внутрішній відступ */
+}
+
+.swiper-slide {
+  width: 153px;
+  // text-align: center;
+}
+
+.swiper-carousel .swiper-button-prev::after,
+.swiper-carousel .swiper-button-next::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  color: #f2ff62; /* Жёлтый цвет текста или иконок */
+}
+
+.swiper-carousel .swiper-button-prev {
+  left: 14px; /* Расстояние 90px от левого края контейнера */
+  // margin-left: -32px; /* Убираем отступ от изображения */
+}
+
+.swiper-carousel .swiper-button-next {
+  right: 14px; /* Расстояние 90px от правого края контейнера */
+  // margin-right: px; /* Убираем отступ от изображения */
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-title {
+    margin-top: 80px;
+    padding-bottom: 26px;
+    font-family: 'Baloo Chettan';
+    font-size: 40px;
+    font-weight: 400;
+
+    line-height: 57.6px;
+
+    color: #ffffff;
+  }
+
+  .swiper-description {
+    font-family: Chivo;
+    font-size: 18px;
+    color: #efefef;
+    padding-bottom: 40px;
+    min-width: 1440px;
+    font-family: Chivo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    width: 215px;
+    // text-align: center;
+  }
+
+  .swiper-carousel .swiper-pagination {
+    bottom: 10px; /* Расположение пагинации */
+    display: flex; /* Используем флекс для центрирования */
+    justify-content: center; /* Центрируем пагинацию */
+    padding-bottom: 80px;
+  }
+
+  .swiper-carousel .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px; /* Добавим отступы между пулями */
+    opacity: 0.3;
+    background: #e4e4e4;
+    border-radius: 5px; /* Добавляем скругление для пуль */
+    transition: opacity 0.3s; /* Плавный переход для прозрачности */
+  }
+
+  .swiper-carousel .swiper-pagination-bullet-active {
+    opacity: 1; /* Полная непрозрачность для активного элемента */
+    width: 24px; /* Увеличиваем ширину для активного элемента */
+    height: 12px; /* Высота для активного элемента */
+    background: #f2ff62; /* Цвет для активного элемента */
+  }
+
+  .swiper-carousel .swiper-pagination-bullet:active {
+    transform: scale(1.5); /* Увеличиваем размер при нажатии */
+  }
+
+  .swiper-carousel {
+    padding-bottom: 152px;
+    justify-content: center; /* Центруємо картинки */
+  }
+
+  .swiper-carousel .swiper-button-prev {
+    left: 90px; /* Расстояние 90px от левого края контейнера */
+    // margin-left: -32px; /* Убираем отступ от изображения */
+  }
+
+  .swiper-carousel .swiper-button-next {
+    right: 90px; /* Расстояние 90px от правого края контейнера */
+    // margin-right: px; /* Убираем отступ от изображения */
+  }
+}
