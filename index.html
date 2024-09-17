@@ -35,8 +35,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/bubbleCovo/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/bubbleCovo/assets/vendor-6b8121bd.js">
-    <link rel="stylesheet" href="/bubbleCovo/assets/index-05cd40c6.css">
+    <link rel="modulepreload" crossorigin href="/bubbleCovo/assets/vendor-25e36fe5.js">
+    <link rel="stylesheet" href="/bubbleCovo/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/bubbleCovo/assets/index-bb7e5c4e.css">
   </head>
   <body>
     <header class="header container">
@@ -70,7 +71,7 @@
         <a class="header-nav-link" href="#benefits">Benefits</a>
       </li>
       <li class="header-list-list">
-        <a class="header-nav-link" href="#gallery">Gallery</a>
+        <a class="header-nav-link" href="#swiper">Gallery</a>
       </li>
       <li class="header-list-list">
         <a class="header-nav-link" href="#faq">FAQ</a>
@@ -177,56 +178,53 @@
 
     
 
-    <section class="slider container">
-  <div class="slider-header">
-    <h2>Gallery</h2>
-    <p>
+    <section class="swiper container">
+  <div class="swiper-header">
+    <h2 class="swiper-title">Gallery</h2>
+    <p class="swiper-description">
       Immerse yourself in the beautiful, frosty landscapes of Ice Crush 2 and
       experience the magic of winter with every match!
     </p>
   </div>
 
-  <div class="swiper">
+  <div class="swiper-carousel">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
+      <!-- Открываем swiper-wrapper -->
       <!-- Slides -->
       <div class="swiper-slide">
         <img src="/bubbleCovo/assets/photo-1-d2059b53.png" alt="photo-1" />
       </div>
       <div class="swiper-slide">
-        <img src="/bubbleCovo/assets/photo-2-36d112f9.png" alt="photo-1" />
+        <img src="/bubbleCovo/assets/photo-2-36d112f9.png" alt="photo-2" />
       </div>
       <div class="swiper-slide">
-        <img src="/bubbleCovo/assets/photo-3-3417c1d4.png" alt="photo-1" />
+        <img src="/bubbleCovo/assets/photo-3-3417c1d4.png" alt="photo-3" />
       </div>
       <div class="swiper-slide">
-        <img src="/bubbleCovo/assets/photo-4-8d6d10c1.png" alt="photo-1" />
+        <img src="/bubbleCovo/assets/photo-4-8d6d10c1.png" alt="photo-4" />
       </div>
       <div class="swiper-slide">
-        <img src="/bubbleCovo/assets/photo-5-4a6d30ef.png" alt="photo-1" />
+        <img src="/bubbleCovo/assets/photo-5-4a6d30ef.png" alt="photo-5" />
       </div>
       <div class="swiper-slide">
-        <img src="/bubbleCovo/assets/photo-6-991a2cd6.png" alt="photo-1" />
+        <img src="/bubbleCovo/assets/photo-6-991a2cd6.png" alt="photo-6" />
       </div>
     </div>
-    <!-- If we need pagination -->
+    <!-- Закрываем swiper-wrapper -->
+
+    <!-- Pagination -->
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
+    <!-- Navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
-    <!-- <div class="custom-pagination"></div>
-      <span class="custom-dot" data-index="1"></span>
-      <span class="custom-dot" data-index="2"></span>
-      <span class="custom-dot" data-index="3"></span>
-    </div> -->
   </div>
 </section>
 
 
     <section class="faq container">
-  <h2>FAQ</h2>
+  <h2 class="faq-title">FAQ</h2>
   <ul>
     <li>
       <span>How can I compete with friends?</span>
@@ -263,7 +261,7 @@
     </li>
   </ul>
 
-  <script src="script.js"></script>
+  
 </section>
 
 
@@ -321,7 +319,7 @@
           <a class="header-nav-link" href="#benefits">Benefits</a>
         </li>
         <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#gallery">Gallery</a>
+          <a class="header-nav-link" href="#swiper">Gallery</a>
         </li>
         <li class="header-list-list-mobile">
           <a class="header-nav-link" href="#faq">FAQ</a>
