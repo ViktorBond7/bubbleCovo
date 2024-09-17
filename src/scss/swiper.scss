@@ -23,7 +23,6 @@
 }
 
 .swiper-carousel {
-  // display: flex;
   padding-bottom: 32px;
 
   width: calc(100% - 160px); // підставляєте ширину свайпера
@@ -33,13 +32,10 @@
 }
 .swiper-wrapper {
   display: flex; /* Залишаємо display: flex для контейнера слайдів */
-
-  // padding-bottom: 32px; /* Додано внутрішній відступ */
 }
 
 .swiper-slide {
   width: 153px;
-  // text-align: center;
 }
 
 .swiper-carousel .swiper-button-prev::after,
