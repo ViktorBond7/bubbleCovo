@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-carousel', {
-    slidesPerView: 0.9,
+    slidesPerView: 1,
     slidesPerGroup: 1,
     // centeredSlides: true,
     loop: false,
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 500,
     breakpoints: {
       1440: {
-        slidesPerView: 3.9,
-        spaceBetween: 10,
-        // centeredSlides: 1,
+        slidesPerView: 4,
+        spaceBetween: 70,
+        centeredSlides: 0,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -37,11 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
       swiper.params.pagination.el = null; // Убираем элемент пагинации
       swiper.update(); // Обновляем слайдер
     } else {
-      // Восстанавливаем пагинацию, если ширина больше или равна 1440px
       if (!swiper.params.pagination.el) {
         swiper.params.pagination.el = '.swiper-pagination'; // Устанавливаем элемент пагинации
-        swiper.pagination.init(); // Инициализируем пагинацию
-        swiper.pagination.update(); // Обновляем пагинацию
+        swiper.pagination.init();
+        swiper.pagination.update();
       }
     }
   }
