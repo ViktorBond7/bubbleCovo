@@ -2,7 +2,50 @@
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 }
 
+.faq-item {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+  padding: 16px; /* Добавьте отступ для улучшения внешнего вида */
+  border-radius: 12px; /* При желании добавьте закругление */
+
+  position: relative; /* Добавьте это свойство */
+}
+
+.faq-element {
+  display: flex;
+  // width: 288px;
+  // height: 68px;
+  // top: 384px;
+  // gap: 0px;
+  opacity: 0px;
+  align-items: center;
+}
+
+.faq-element-req {
+  font-family: Chivo;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #efefef;
+}
+
+.faq-element-resp {
+  font-family: Chivo;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  color: #efefef;
+}
+
 .icon {
+  position: absolute; /* Измените это свойство */
+  top: 18px; /* Расположение по вертикали */
+  right: 18px;
+
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -46,6 +89,14 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .faq-element-req {
+    font-size: 18px;
+  }
+
+  .faq-element-resp {
+    font-size: 16px;
+  }
+
   .plus-style rect {
     width: 40px;
     height: 40px;

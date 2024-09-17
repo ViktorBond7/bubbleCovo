@@ -1,4 +1,5 @@
 document.getElementById('toggleSvg').addEventListener('click', toggleText);
+const toggleSvg = document.getElementById('toggleSvg');
 
 function toggleText() {
   const svgText = document.getElementById('svgText');
