@@ -102,21 +102,39 @@
   display: flex;
   width: 32px;
   height: 32px;
-  background-color: yellow;
-  font-size: 40px;
-  font-weight: 200;
+  background-color: yellow; /* Желтый цвет для плюса */
+  font-weight: 600;
   justify-content: center;
   align-items: center;
   padding-top: 0;
   cursor: pointer;
-
   color: #8747ff;
+  font-size: 18px; /* Размер текста для плюса/минуса */
 
   @include media(desktop) {
     width: 40px;
     height: 40px;
+
+    font-size: 30px; /* Размер текста для плюса/минуса */
   }
 }
+.toggle-symbol.minus {
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4de4f8 5.5%, #4afff4 100%);
+  border-radius: 4px;
+}
+@media screen and (min-width: 1440px) {
+  .toggle-symbol.minus {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    font-size: 30px; /* Размер текста для плюса/минуса */
+  }
+}
+
 .faq-item-header {
   display: flex;
   justify-content: space-between;
