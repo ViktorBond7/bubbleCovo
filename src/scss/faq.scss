@@ -1,7 +1,7 @@
 .faq {
   position: relative;
-  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
-  overflow: hidden;
+  // overflow: hidden;
+  scroll-margin-top: 100px;
 }
 
 .faq-title {
@@ -140,6 +140,9 @@
 
   letter-spacing: 0.2px;
   color: #efefef;
+  @include media(desktop) {
+    @include font(16, 27);
+  }
 }
 
 .faq-item {
@@ -159,6 +162,10 @@
   z-index: 0;
   opacity: 0.6;
   width: 70px;
+
+  .container-fag-beg {
+    background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+  }
 
   // @include media(desktop) {
   //   .faq {

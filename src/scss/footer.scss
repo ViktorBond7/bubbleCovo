@@ -1,7 +1,6 @@
 .footer {
   position: relative;
 
-  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   font-family: Chivo;
   font-size: 12px;
   font-weight: 400;
@@ -41,6 +40,9 @@
   }
 }
 
+.container-footer-bag {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+}
 // .bubble-img-little-home-10 {
 //   position: absolute;
 
