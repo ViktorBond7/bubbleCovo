@@ -1,8 +1,6 @@
 .policy {
   position: relative;
-  // overflow: hidden;
-  // margin-left: 0;
-  // margin-right: 0;
+  margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 60px;
@@ -222,10 +220,11 @@
   padding-bottom: 41px;
 
   max-width: 320px;
-  margin: 0;
   padding-left: 18px;
   padding-right: 18px;
   background-color: $_background-color;
+
+  margin: 0 auto;
 }
 
 .footer-list {
