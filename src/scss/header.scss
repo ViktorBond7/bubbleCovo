@@ -2,12 +2,24 @@
   display: flex;
   justify-content: space-between;
   padding-top: 44px;
-  z-index: 999;
   align-items: center;
-  // top: 0;
-  // position: fixed;
+  justify-content: space-between;
+  width: 320px;
+
+  @include media(desktop) {
+    justify-content: space-between;
+    width: 1440px;
+  }
 }
 
+.header-beg {
+  background-color: #3c98cc;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: 100%;
+}
 .logo {
   display: flex;
   flex-direction: column;

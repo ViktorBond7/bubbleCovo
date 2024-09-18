@@ -1,16 +1,20 @@
 .container-how-to-play {
-  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
+  scroll-margin-top: 60px;
   @include media(desktop) {
     padding-top: 96px;
     padding-bottom: 80px;
+    scroll-margin-top: 100px;
   }
 }
 
+.how-to-play-beg {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+}
 .container-how-to-play h2 {
   padding-bottom: 28px;
   justify-content: center;
@@ -85,7 +89,7 @@
   }
 }
 
-.icon-bubble {
+.icon-bubble-how-play {
   position: absolute;
   padding: 0;
   bottom: 0;
@@ -93,5 +97,28 @@
   opacity: 0.4;
   @include media(desktop) {
     opacity: 0;
+  }
+}
+
+.icon-bubble-left-how-play {
+  position: absolute;
+  opacity: 0;
+  @include media(desktop) {
+    position: absolute;
+    bottom: 168px;
+    left: 50px;
+    opacity: 0.4;
+    width: 174px;
+  }
+}
+
+.icon-bubble-rich-how-play {
+  position: absolute;
+  opacity: 0;
+  @include media(desktop) {
+    position: absolute;
+    bottom: 18px;
+    right: 0;
+    opacity: 0.4;
   }
 }
