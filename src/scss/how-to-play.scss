@@ -1,0 +1,97 @@
+.container-how-to-play {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include media(desktop) {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+}
+
+.container-how-to-play h2 {
+  padding-bottom: 28px;
+  justify-content: center;
+  display: flex;
+  font-family: $_font_size_baloo;
+  font-weight: 400;
+  font-size: 24px;
+  color: #efefef;
+  @include media(desktop) {
+    padding-bottom: 50px;
+  }
+}
+
+.how-to-play-list-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 16px;
+    justify-content: center;
+  }
+}
+
+.how-to-play-list-list p {
+  font-family: $_font_size_chvo;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  color: #efefef;
+  @include font(10, 20);
+  width: 232px;
+  @include media(desktop) {
+    width: 770px;
+    @include font(18, 27);
+  }
+}
+
+.icon-game-pic {
+  padding-bottom: 28px;
+  @include media(desktop) {
+    padding-bottom: 36px;
+  }
+}
+
+.container-img-stars {
+  position: relative;
+}
+.container-img-stars span {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $_font_size_baloo;
+  color: #5d24c6;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  @include media(desktop) {
+    width: 770px;
+    font-size: 24px;
+    top: 18px;
+    left: 30px;
+  }
+}
+
+.icon-how-to-play-stars {
+  display: flex;
+  width: 40px;
+  height: auto;
+  @include media(desktop) {
+    width: 80px;
+  }
+}
+
+.icon-bubble {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  @include media(desktop) {
+    opacity: 0;
+  }
+}
