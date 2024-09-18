@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function checkPagination() {
     if (window.innerWidth < 1440) {
-      swiper.pagination.destroy(); // Уничтожаем пагинацию для экранов меньше 1440px
+      swiper.pagination.destroy();
       swiper.params.pagination.el = null; // Убираем элемент пагинации
       swiper.update(); // Обновляем слайдер
     } else {
