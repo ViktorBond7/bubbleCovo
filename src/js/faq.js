@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getIconSrc() {
     if (window.matchMedia('(min-width: 1440px)').matches) {
-      return '../img/faq/minus.png';
+      return '/img/faq/minus.png';
     } else {
-      return '../img/faq/minus-mob.png';
+      return '/img/faq/minus-mob.png';
     }
   }
 
@@ -102,20 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const extraText = imgElement
       .closest('.faq-item')
       .querySelector('.extraText');
-    if (imgElement.getAttribute('src') === '../img/faq/plus.png') {
+    if (imgElement.getAttribute('src') === '/img/faq/plus.png') {
       imgElement.setAttribute('src', getMinusIconSrc());
       extraText.style.display = 'block';
     } else {
-      imgElement.setAttribute('src', '../img/faq/plus.png');
+      imgElement.setAttribute('src', '/img/faq/plus.png');
       extraText.style.display = 'none';
     }
   };
 
   function getMinusIconSrc() {
     if (window.matchMedia('(min-width: 1440px)').matches) {
-      return '../img/faq/minus.png';
+      return '/img/faq/minus.png';
     } else {
-      return '../img/faq/minus-mob.png';
+      return '/img/faq/minus-mob.png';
     }
   }
 });
