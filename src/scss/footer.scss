@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   font-family: Chivo;
   font-size: 12px;
@@ -38,3 +40,19 @@
     padding-bottom: 98px;
   }
 }
+
+// .bubble-img-little-home-10 {
+//   position: absolute;
+
+//   opacity: 0;
+
+//   @include media(desktop) {
+//     // .faq {
+//     //   overflow: auto;
+//     // }
+//     top: 0%;
+//     left: 10%;
+//     width: 154px;
+//     z-index: 5;
+//   }
+// }

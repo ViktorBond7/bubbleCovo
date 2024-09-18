@@ -103,7 +103,27 @@
   opacity: 0.6;
   width: 70px;
 
-  @include media(desktop) {
-    opacity: 0;
-  }
+  // @include media(desktop) {
+  //   .faq {
+  //     overflow: visible;
+  //   }
+  //   top: -2%;
+  //   left: 70%;
+  //   width: 154px;
+  //   z-index: 5;
+  // }
 }
+
+// .bubble-img-little-home-11 {
+//   opacity: 0;
+
+//   @include media(desktop) {
+//     .faq {
+//       overflow: auto;
+//     }
+//     top: 1%;
+//     left: 70%;
+//     width: 154px;
+//     z-index: 6;
+//   }
+// }
