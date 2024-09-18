@@ -1,121 +1,88 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const faqList = document.getElementById('faqList');
+const faqList = document.getElementById('faqList');
 
-  const faqItems = [
-    {
-      req: 'How can I compete with friends?',
-      resp: 'Connect the game to social media to compare scores with friends.',
-    },
-    {
-      req: 'What are the game rules?',
-      resp: 'The rules are simple and outlined in the help section.',
-    },
-    {
-      req: 'How to reset my password?',
-      resp: 'You can reset your password by clicking on "Forgot Password".',
-    },
-    {
-      req: 'Can I play offline?',
-      resp: 'No, the game requires an internet connection.',
-    },
-    {
-      req: 'How do I report a bug?',
-      resp: 'You can report bugs through the support form.',
-    },
-    {
-      req: 'What platforms are supported?',
-      resp: 'The game is available on web and mobile.',
-    },
-    {
-      req: 'Are there in-app purchases?',
-      resp: 'Yes, there are optional in-app purchases available.',
-    },
-    {
-      req: 'How can I contact support?',
-      resp: 'You can contact support via the contact form on our website.',
-    },
-    {
-      req: 'Is there a tutorial available?',
-      resp: 'Yes, there is a tutorial in the main menu.',
-    },
-    {
-      req: 'Can I play with friends?',
-      resp: 'Yes, you can invite friends to play together.',
-    },
-    {
-      req: 'How to change my username?',
-      resp: 'You can change your username in the settings.',
-    },
-    {
-      req: 'What happens if I uninstall the game?',
-      resp: 'Your data is saved in the cloud.',
-    },
-  ];
+const faqItems = [
+  {
+    req: 'How can I compete with friends?',
+    resp: 'Connect the game to social media to compare scores with friends.',
+  },
+  {
+    req: 'What are the game rules?',
+    resp: 'The rules are simple and outlined in the help section.',
+  },
+  {
+    req: 'How to reset my password?',
+    resp: 'You can reset your password by clicking on "Forgot Password".',
+  },
+  {
+    req: 'Can I play offline?',
+    resp: 'No, the game requires an internet connection.',
+  },
+  {
+    req: 'How do I report a bug?',
+    resp: 'You can report bugs through the support form.',
+  },
+  {
+    req: 'What platforms are supported?',
+    resp: 'The game is available on web and mobile.',
+  },
+  {
+    req: 'Are there in-app purchases?',
+    resp: 'Yes, there are optional in-app purchases available.',
+  },
+  {
+    req: 'How can I contact support?',
+    resp: 'You can contact support via the contact form on our website.',
+  },
+  {
+    req: 'Is there a tutorial available?',
+    resp: 'Yes, there is a tutorial in the main menu.',
+  },
+  {
+    req: 'Can I play with friends?',
+    resp: 'Yes, you can invite friends to play together.',
+  },
+  {
+    req: 'How to change my username?',
+    resp: 'You can change your username in the settings.',
+  },
+  {
+    req: 'What happens if I uninstall the game?',
+    resp: 'Your data is saved in the cloud.',
+  },
+];
 
-  function createFaqItems() {
-    faqItems.forEach(item => {
-      const faqItem = document.createElement('div');
-      faqItem.classList.add('faq-item');
+const createFaqItems = faqItems => {
+  const content = faqItems
+    .map(
+      item => `
+    <div class="faq-item">
+        <div class="faq-item-header">
+            <p class="title-req">${item.req}</p>
+            <p class="toggle-symbol">+</p>
+        </div>
+        <div class="faq-item-content">
+            <p>${item.resp}</p>
+        </div>
+    </div>
+  `
+    )
+    .join('');
+  faqList.innerHTML = content;
+};
 
-      const faqElement = document.createElement('li');
-      faqElement.classList.add('faq-element');
+createFaqItems(faqItems);
 
-      const reqText = document.createElement('p');
-      reqText.classList.add('faq-element-req');
-      reqText.textContent = item.req;
+document.querySelectorAll('.faq-item-header').forEach(header => {
+  header.addEventListener('click', function () {
+    const content = this.nextElementSibling;
+    const symbol = this.querySelector('.toggle-symbol');
 
-      const img = document.createElement('img');
-      img.setAttribute('class', 'icon');
-      img.setAttribute('onclick', 'toggleText(this);');
-      img.setAttribute('src', getIconSrc()); // Встановлюємо правильне зображення
-
-      faqElement.appendChild(reqText);
-      faqElement.appendChild(img);
-
-      const extraText = document.createElement('li');
-      extraText.classList.add('extraText');
-      extraText.style.display = 'none';
-
-      const respParagraph = document.createElement('p');
-      respParagraph.classList.add('faq-element-resp');
-      respParagraph.textContent = item.resp;
-
-      extraText.appendChild(respParagraph);
-
-      faqItem.appendChild(faqElement);
-      faqItem.appendChild(extraText);
-      faqList.appendChild(faqItem);
-    });
-  }
-
-  function getIconSrc() {
-    if (window.matchMedia('(min-width: 1440px)').matches) {
-      return '/img/faq/minus.png';
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+      symbol.textContent = '+';
     } else {
-      return '/img/faq/minus-mob.png';
+      content.style.display = 'block';
+      symbol.textContent = '-';
     }
-  }
-
-  createFaqItems();
-
-  window.toggleText = function (imgElement) {
-    const extraText = imgElement
-      .closest('.faq-item')
-      .querySelector('.extraText');
-    if (imgElement.getAttribute('src') === '/img/faq/plus.png') {
-      imgElement.setAttribute('src', getMinusIconSrc());
-      extraText.style.display = 'block';
-    } else {
-      imgElement.setAttribute('src', '/img/faq/plus.png');
-      extraText.style.display = 'none';
-    }
-  };
-
-  function getMinusIconSrc() {
-    if (window.matchMedia('(min-width: 1440px)').matches) {
-      return '/img/faq/minus.png';
-    } else {
-      return '/img/faq/minus-mob.png';
-    }
-  }
+  });
 });

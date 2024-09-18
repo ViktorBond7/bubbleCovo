@@ -1,14 +1,6 @@
 .container-home {
   padding-top: 42px;
-  padding-bottom: 60px;
-  height: 536px;
   position: relative;
-  @include media(desktop) {
-    display: flex;
-    height: 700px;
-    padding-top: 68px;
-    padding-bottom: 66px;
-  }
 }
 
 .container-home-img {
@@ -67,29 +59,39 @@
   }
 }
 
-.bubble-img-home {
+.bubbletop-img-home {
   position: absolute;
-  top: 14px;
+  bottom: 418px;
   left: 28px;
   z-index: 1;
   opacity: 0.4;
   width: 104px;
   @include media(desktop) {
-    top: 14px;
+    bottom: 412px;
     left: 54px;
-    width: 282px;
+    width: 281px;
   }
 }
 
-.bubble-img-litle-home {
+.bubbleb-img-litle-home {
   position: absolute;
-  top: 406px;
-  left: 226px;
+  bottom: 58px;
+  right: 22px;
   z-index: 1;
   opacity: 0.4;
   width: 70px;
 
   @include media(desktop) {
     opacity: 0;
+  }
+}
+#home {
+  margin-top: 90px;
+  height: 492px;
+  @include media(desktop) {
+    display: flex;
+    padding-top: 68px;
+    padding-bottom: 66px;
+    height: auto;
   }
 }

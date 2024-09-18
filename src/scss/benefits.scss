@@ -4,14 +4,16 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 50px;
+  scroll-margin-top: 60px;
   @include media(desktop) {
     padding-top: 96px;
     padding-bottom: 70px;
+    scroll-margin-top: 100px;
   }
 }
 
 .container-benefits h2 {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 24px;
   text-align: center;
   padding-bottom: 36px;
@@ -81,7 +83,9 @@
 }
 
 .benefits-list li:nth-child(4) .benefits-title {
-  width: 72px;
   justify-content: center;
   display: flex;
+  @include media(desktop) {
+    width: 200px;
+  }
 }
