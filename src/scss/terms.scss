@@ -11,7 +11,7 @@
   overflow: hidden;
 
   @include media(desktop) {
-    max-width: 1440px;
+    max-width: 100%;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
@@ -74,6 +74,7 @@
 
 @media screen and (min-width: 1440px) {
   .terms {
+    max-width: 100%;
     padding-left: 182px;
     padding-right: 182px;
   }
