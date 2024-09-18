@@ -2,6 +2,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
+  @include media(desktop) {
+    padding-top: 84px;
+    padding-bottom: 80px;
+  }
 }
 
 .container-about h2 {
@@ -13,6 +17,10 @@
   font-weight: 400;
   font-size: 24px;
   color: #1e1e1e;
+  @include media(desktop) {
+    font-size: 40px;
+    padding-bottom: 78px;
+  }
 }
 
 .container-about p {
@@ -24,6 +32,10 @@
   @include font(12, 20);
   letter-spacing: 0px;
   color: #1e1e1e;
+  @include media(desktop) {
+    @include font(18, 27);
+    width: 636px;
+  }
 }
 
 .bubble-about-top {
@@ -31,14 +43,56 @@
   top: 18px;
   right: 0;
   opacity: 0.4;
+  @include media(desktop) {
+    // top: 44px;
+    // left: 48px;
+    top: 0;
+    right: 0;
+  }
 }
 
 .bubble-about-bottom {
   position: absolute;
   bottom: 162px;
   left: 0;
+
+  @include media(desktop) {
+    // bottom: 0;
+    // left: 1164px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
-//  @include media(desktop) {
-//     @include font(32, 32);
-//   }
+.container-about-title-img-van {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 134px;
+    padding-bottom: 66px;
+  }
+}
+
+.container-about-title-img-second {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 134px;
+  }
+}
+
+.title-about {
+  @include media(desktop) {
+    order: 2;
+  }
+}
+
+.img-about {
+  @include media(desktop) {
+    order: 1;
+  }
+}
+
+// main {
+//   position: relative;
+// }
