@@ -1,7 +1,8 @@
 .policy {
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 60px;
@@ -10,10 +11,13 @@
   max-width: 320px;
 
   @include media(desktop) {
-    max-width: 1440px;
+    // min-width: 1440px;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
+
+    // margin-left: 0;
+    // margin-right: 0;
   }
 }
 
@@ -217,7 +221,7 @@
   padding-bottom: 41px;
 
   max-width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding-left: 18px;
   padding-right: 18px;
   background-color: $_background-color;
