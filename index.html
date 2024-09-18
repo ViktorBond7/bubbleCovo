@@ -39,9 +39,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/bubbleCovo/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/bubbleCovo/assets/vendor-25e36fe5.js">
-    <link rel="stylesheet" href="/bubbleCovo/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/bubbleCovo/assets/index-b9805691.css">
+    <link rel="stylesheet" href="/bubbleCovo/assets/index-5bd27422.css">
   </head>
   <body>
     <header class="header container">
@@ -89,8 +87,81 @@
   </div>
 </header>
 
+<!-- mobile-menu -->
+<div class="mobile-menu-wrapper visually-hidden">
+  <div class="container-root-mobile">
+    <div class="container-mobile">
+      <a class="mobile-menu-content-home" href="./index.html"
+        ><div class="logo logo-mobile">
+          BUBBLE
+          <span class="logo-part">
+            <span class="logo-letter" style="color: #f56610">C</span
+            ><!--
+    --><span class="logo-letter" style="color: #8747ff">O</span
+            ><!--
+    --><span class="logo-letter" style="color: #fd8006">C</span
+            ><!--
+    --><span class="logo-letter" style="color: #3eb635">O</span>
+          </span>
+        </div></a
+      >
 
-    <section class="container container-home">
+      <div class="mobile-menu-close">
+        <svg class="burger-svg" width="44" height="44" aria-label="clouse">
+          <use href="/bubbleCovo/assets/sprite-8d2493d5.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <nav class="nav-header-mobile">
+      <ul class="header-list-mobile">
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#home">Home</a>
+        </li>
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#about">About the Game</a>
+        </li>
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#play">How to Play</a>
+        </li>
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#swiper">Gallery</a>
+        </li>
+        <li class="header-list-list-mobile">
+          <a class="header-nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="bubble-img-mobile">
+      <picture>
+        <source
+          srcset="/bubbleCovo/assets/bubble-1x-b975414d.png 1x, /bubbleCovo/assets/bubble-1x-b975414d.png 2x"
+          media="(min-width:320px)"
+        />
+
+        <img src="/bubbleCovo/assets/bubble-1x-b975414d.png" alt="bubble" loading="lazy" />
+      </picture>
+    </div>
+
+    <div class="bubble-img-litle-mobile">
+      <picture>
+        <source
+          srcset="/bubbleCovo/assets/bubble-1x-b975414d.png 1x, /bubbleCovo/assets/bubble-1x-b975414d.png 2x"
+          media="(min-width:320px)"
+        />
+
+        <img src="/bubbleCovo/assets/bubble-1x-b975414d.png" alt="bubble" loading="lazy" />
+      </picture>
+    </div>
+  </div>
+</div>
+
+
+    <section class="container container-home" id="home">
   <div class="container-home-img">
     <picture>
       <source
@@ -107,7 +178,10 @@
   </div>
   <div class="container-title-button-home">
     <h1 class="home-title">Bubble CoCo: Bubble shooter</h1>
-    <a class="link-google-play" href="./index.html">
+    <a
+      class="link-google-play"
+      href="https://play.google.com/store/apps/details?id=com.cookapps.bubblecoco"
+    >
       <picture>
         <source
           srcset="/bubbleCovo/assets/google-play-e4b323d1.jpg 1x, /bubbleCovo/assets/google-play2x-c77246fa.jpg 2x"
@@ -176,9 +250,83 @@
 </section>
 
 
-    
+    <section class="container container-about" id="about">
+  <h2>About the Game</h2>
+  <div class="container-about-title-img-van">
+    <p>
+      Embark on a frosty adventure with Ice Crush 2, a thrilling match-3 puzzle
+      game set in a winter wonderland. In this game, you’ll match sparkling ice
+      crystals to complete levels and outsmart the mischievous snow monsters
+      trying to freeze your progress. Each level presents unique challenges,
+      from clearing ice blocks to collecting snowflakes, all set against a
+      backdrop of beautifully animated snowy landscapes.
+    </p>
 
-    <section class="container container-how-to-play">
+    <picture>
+      <source
+        srcset="/bubbleCovo/assets/rectangle-mobx1-be5c2782.png 1x, /bubbleCovo/assets/rectangle-mobx2-d6ba2f3f.png 2x"
+        media="(max-width:1439px)"
+      />
+
+      <source
+        srcset="/bubbleCovo/assets/rectangle-deskx1-e42c5f72.png 1x, /bubbleCovo/assets/rectangle-deskx2-42dab976.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <img src="/bubbleCovo/assets/rectangle-mobx1-be5c2782.png" alt="icon" loading="lazy" />
+    </picture>
+  </div>
+  <div class="container-about-title-img-second">
+    <p class="title-about">
+      As you journey through the icy world, you’ll unlock powerful boosters and
+      special abilities that help you overcome more difficult levels. Whether
+      you’re a seasoned match-3 player or new to the genre, Ice Crush 2 offers a
+      perfect blend of strategy, excitement, and seasonal cheer. With hundreds
+      of levels to explore, daily rewards, and special holiday events, this game
+      promises endless entertainment. Dive into the wintery fun today and see
+      how far you can go in your frosty quest!
+    </p>
+    <picture class="img-about">
+      <source
+        srcset="/bubbleCovo/assets/rectangle6-mobx1-7eb5c191.png 1x, /bubbleCovo/assets/rectangle6-mobx2-ab95e17d.png 2x"
+        media="(max-width:1439px)"
+      />
+
+      <source
+        srcset="/bubbleCovo/assets/rectangle6-deskx1-5bcd3163.png 1x, /bubbleCovo/assets/rectangle6-deskx2-a9a9873c.png 2x"
+        media="(min-width: 1440px)"
+      />
+      <img src="/bubbleCovo/assets/rectangle6-deskx1-5bcd3163.png" alt="icon" loading="lazy" />
+    </picture>
+  </div>
+  <picture class="bubble-about-top">
+    <source
+      srcset="/bubbleCovo/assets/bubble-mobt-x1-fcf1e811.png 1x, /bubbleCovo/assets/bubble-mobt-x2-0dd76cdb.png 2x"
+      media="(max-width:1439px)"
+    />
+
+    <source
+      srcset="/bubbleCovo/assets/bubble-desk-rihtx1-67eb4990.png 1x, /bubbleCovo/assets/bubble-desk-rihtx2-7b847983.png 2x"
+      media="(min-width: 1440px)"
+    />
+    <img src="/bubbleCovo/assets/bubble-mobt-x1-fcf1e811.png" alt="icon" loading="lazy" />
+  </picture>
+
+  <picture class="bubble-about-bottom">
+    <source
+      srcset="/bubbleCovo/assets/bubble-mobb-x1-fee55878.png 1x, /bubbleCovo/assets/bubble-mobp-x2-ca28151f.png 2x"
+      media="(max-width:1439px)"
+    />
+
+    <source
+      srcset="/bubbleCovo/assets/bubble-leftx1-ec8bc3a3.png 1x, /bubbleCovo/assets/bubble-leftx2-b6636f14.png 2x"
+      media="(min-width: 1440px)"
+    />
+    <img src="/bubbleCovo/assets/bubble-mobt-x1-fcf1e811.png" alt="icon" loading="lazy" />
+  </picture>
+</section>
+
+
+    <section class="container container-how-to-play" id="play">
   <h2>How to Play?</h2>
 
   <picture class="icon-game-pic">
@@ -341,7 +489,7 @@
 <!-- m,m,mm -->
 
 
-    <section class="container container-benefits">
+    <section class="container container-benefits" id="benefits">
   <h2>Benefits</h2>
   <ul class="benefits-list">
     <li class="benefits-list-list">
@@ -442,79 +590,6 @@
   </ul>
   <p class="footer-item">All rights reserved joygamebliss.com | 2024</p>
 </footer>
-
-
-    <div class="mobile-menu-wrapper visually-hidden">
-  <div class="container-root-mobile">
-    <div class="container-mobile">
-      <a class="mobile-menu-content-home" href="./index.html"
-        ><div class="logo logo-mobile">
-          BUBBLE
-          <span class="logo-part">
-            <span class="logo-letter" style="color: #f56610">C</span
-            ><!--
-    --><span class="logo-letter" style="color: #8747ff">O</span
-            ><!--
-    --><span class="logo-letter" style="color: #fd8006">C</span
-            ><!--
-    --><span class="logo-letter" style="color: #3eb635">O</span>
-          </span>
-        </div></a
-      >
-
-      <div class="mobile-menu-close">
-        <svg class="burger-svg" width="44" height="44" aria-label="clouse">
-          <use href="/bubbleCovo/assets/sprite-8d2493d5.svg#icon-close"></use>
-        </svg>
-      </div>
-    </div>
-
-    <nav class="nav-header-mobile">
-      <ul class="header-list-mobile">
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#about">About the Game</a>
-        </li>
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#play">How to Play</a>
-        </li>
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#benefits">Benefits</a>
-        </li>
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#swiper">Gallery</a>
-        </li>
-        <li class="header-list-list-mobile">
-          <a class="header-nav-link" href="#faq">FAQ</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="bubble-img-mobile">
-      <picture>
-        <source
-          srcset="/bubbleCovo/assets/bubble-1x-b975414d.png 1x, /bubbleCovo/assets/bubble-1x-b975414d.png 2x"
-          media="(min-width:320px)"
-        />
-
-        <img src="/bubbleCovo/assets/bubble-1x-b975414d.png" alt="bubble" loading="lazy" />
-      </picture>
-    </div>
-
-    <div class="bubble-img-litle-mobile">
-      <picture>
-        <source
-          srcset="/bubbleCovo/assets/bubble-1x-b975414d.png 1x, /bubbleCovo/assets/bubble-1x-b975414d.png 2x"
-          media="(min-width:320px)"
-        />
-
-        <img src="/bubbleCovo/assets/bubble-1x-b975414d.png" alt="bubble" loading="lazy" />
-      </picture>
-    </div>
-  </div>
-</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
