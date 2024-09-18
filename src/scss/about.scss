@@ -1,0 +1,44 @@
+.container-about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.container-about h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6px;
+
+  font-family: $_font_size_baloo;
+  font-weight: 400;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.container-about p {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  @include font(12, 20);
+  letter-spacing: 0px;
+  color: #1e1e1e;
+}
+
+.bubble-about-top {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  opacity: 0.4;
+}
+
+.bubble-about-bottom {
+  position: absolute;
+  bottom: 162px;
+  left: 0;
+}
+
+//  @include media(desktop) {
+//     @include font(32, 32);
+//   }
