@@ -29,15 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // Функция для проверки и настройки пагинации
   function checkPagination() {
     if (window.innerWidth < 1440) {
-      swiper.pagination.destroy(); // Уничтожаем пагинацию для экранов меньше 1440px
-      swiper.params.pagination.el = null; // Убираем элемент пагинации
-      swiper.update(); // Обновляем слайдер
+      swiper.pagination.destroy();
+      swiper.params.pagination.el = null;
+      swiper.update();
     } else {
       if (!swiper.params.pagination.el) {
-        swiper.params.pagination.el = '.swiper-pagination'; // Устанавливаем элемент пагинации
+        swiper.params.pagination.el = '.swiper-pagination';
         swiper.pagination.init();
         swiper.pagination.update();
       }
