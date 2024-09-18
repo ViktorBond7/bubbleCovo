@@ -284,13 +284,13 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
+    min-width: 100%;
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.02em;
     padding-top: 96px;
     padding-bottom: 98px;
 
-    max-width: 1440px;
     padding-left: 70px;
     padding-right: 70px;
   }
