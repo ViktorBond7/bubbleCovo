@@ -1,6 +1,5 @@
 .footer {
   position: relative;
-
   font-family: Chivo;
   font-size: 12px;
   font-weight: 400;
@@ -10,9 +9,7 @@
   color: #efefef;
   padding-top: 41px;
   padding-bottom: 41px;
-
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 320px;
 }
 
 .footer-list {
@@ -30,9 +27,6 @@
   align-items: center;
 }
 
-// .footer-item {
-// }
-
 @media screen and (min-width: 1440px) {
   .footer {
     font-size: 18px;
@@ -46,18 +40,3 @@
 .container-footer-bag {
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
 }
-// .bubble-img-little-home-10 {
-//   position: absolute;
-
-//   opacity: 0;
-
-//   @include media(desktop) {
-//     // .faq {
-//     //   overflow: auto;
-//     // }
-//     top: 0%;
-//     left: 10%;
-//     width: 154px;
-//     z-index: 5;
-//   }
-// }
