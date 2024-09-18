@@ -2,7 +2,7 @@
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   text-align: center;
   position: relative;
-  margin-bottom: 32px; /* Додано внутрішній відступ */
+  margin-bottom: 32px;
 }
 
 .swiper-title {
@@ -10,6 +10,7 @@
   padding-bottom: 8px;
   font-family: 'Baloo Chettan';
   font-size: 24px;
+  font-weight: 800;
   color: #ffffff;
 }
 
@@ -23,38 +24,36 @@
 }
 
 .swiper-carousel {
-  display: flex;
   padding-bottom: 32px;
+
+  width: calc(100% - 160px); // підставляєте ширину свайпера
+  overflow-x: hidden;
+  margin: 0 auto;
+  justify-content: center; /* Центруємо картинки */
 }
 .swiper-wrapper {
-  display: flex; /* Залишаємо display: flex для контейнера слайдів */
-
-  // padding-bottom: 32px; /* Додано внутрішній відступ */
+  display: flex;
 }
 
 .swiper-slide {
   width: 153px;
-  // text-align: center;
 }
 
 .swiper-carousel .swiper-button-prev::after,
 .swiper-carousel .swiper-button-next::after {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   cursor: pointer;
-
-  color: #f2ff62; /* Жёлтый цвет текста или иконок */
+  color: #f2ff62;
 }
 
 .swiper-carousel .swiper-button-prev {
   left: 14px; /* Расстояние 90px от левого края контейнера */
-  // margin-left: -32px; /* Убираем отступ от изображения */
 }
 
 .swiper-carousel .swiper-button-next {
   right: 14px; /* Расстояние 90px от правого края контейнера */
-  // margin-right: px; /* Убираем отступ от изображения */
 }
 
 @media screen and (min-width: 1440px) {
@@ -71,12 +70,10 @@
   }
 
   .swiper-description {
-    font-family: Chivo;
-    font-size: 18px;
+    font-family: 'Chivo';
     color: #efefef;
     padding-bottom: 40px;
     min-width: 1440px;
-    font-family: Chivo;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
@@ -86,7 +83,6 @@
 
   .swiper-slide {
     width: 215px;
-    // text-align: center;
   }
 
   .swiper-carousel .swiper-pagination {
@@ -119,16 +115,19 @@
 
   .swiper-carousel {
     padding-bottom: 152px;
+
+    width: calc(100% - 300px); // підставляєте ширину свайпера
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding-bottom: 152px;
     justify-content: center; /* Центруємо картинки */
   }
 
   .swiper-carousel .swiper-button-prev {
     left: 90px; /* Расстояние 90px от левого края контейнера */
-    // margin-left: -32px; /* Убираем отступ от изображения */
   }
 
   .swiper-carousel .swiper-button-next {
     right: 90px; /* Расстояние 90px от правого края контейнера */
-    // margin-right: px; /* Убираем отступ от изображения */
   }
 }

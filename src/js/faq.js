@@ -1,34 +1,121 @@
-document.getElementById('toggleSvg').addEventListener('click', toggleText);
-const toggleSvg = document.getElementById('toggleSvg');
+document.addEventListener('DOMContentLoaded', () => {
+  const faqList = document.getElementById('faqList');
 
-function toggleText() {
-  const svgText = document.getElementById('svgText');
-  const extraText = document.getElementById('extraText');
-  const svgElement = document.getElementById('toggleSvg');
+  const faqItems = [
+    {
+      req: 'How can I compete with friends?',
+      resp: 'Connect the game to social media to compare scores with friends.',
+    },
+    {
+      req: 'What are the game rules?',
+      resp: 'The rules are simple and outlined in the help section.',
+    },
+    {
+      req: 'How to reset my password?',
+      resp: 'You can reset your password by clicking on "Forgot Password".',
+    },
+    {
+      req: 'Can I play offline?',
+      resp: 'No, the game requires an internet connection.',
+    },
+    {
+      req: 'How do I report a bug?',
+      resp: 'You can report bugs through the support form.',
+    },
+    {
+      req: 'What platforms are supported?',
+      resp: 'The game is available on web and mobile.',
+    },
+    {
+      req: 'Are there in-app purchases?',
+      resp: 'Yes, there are optional in-app purchases available.',
+    },
+    {
+      req: 'How can I contact support?',
+      resp: 'You can contact support via the contact form on our website.',
+    },
+    {
+      req: 'Is there a tutorial available?',
+      resp: 'Yes, there is a tutorial in the main menu.',
+    },
+    {
+      req: 'Can I play with friends?',
+      resp: 'Yes, you can invite friends to play together.',
+    },
+    {
+      req: 'How to change my username?',
+      resp: 'You can change your username in the settings.',
+    },
+    {
+      req: 'What happens if I uninstall the game?',
+      resp: 'Your data is saved in the cloud.',
+    },
+  ];
 
-  if (svgText.innerHTML === '+') {
-    svgText.innerHTML = '-';
-    extraText.style.display = 'block';
-    svgElement.classList.remove('plus-style');
-    svgElement.classList.add('minus-style');
-  } else {
-    svgText.innerHTML = '+';
-    extraText.style.display = 'none';
-    svgElement.classList.remove('minus-style');
-    svgElement.classList.add('plus-style');
+  function createFaqItems() {
+    faqItems.forEach(item => {
+      const faqItem = document.createElement('div');
+      faqItem.classList.add('faq-item');
+
+      const faqElement = document.createElement('li');
+      faqElement.classList.add('faq-element');
+
+      const reqText = document.createElement('p');
+      reqText.classList.add('faq-element-req');
+      reqText.textContent = item.req;
+
+      const img = document.createElement('img');
+      img.setAttribute('class', 'icon');
+      img.setAttribute('onclick', 'toggleText(this);');
+      img.setAttribute('src', getIconSrc()); // Встановлюємо правильне зображення
+
+      faqElement.appendChild(reqText);
+      faqElement.appendChild(img);
+
+      const extraText = document.createElement('li');
+      extraText.classList.add('extraText');
+      extraText.style.display = 'none';
+
+      const respParagraph = document.createElement('p');
+      respParagraph.classList.add('faq-element-resp');
+      respParagraph.textContent = item.resp;
+
+      extraText.appendChild(respParagraph);
+
+      faqItem.appendChild(faqElement);
+      faqItem.appendChild(extraText);
+      faqList.appendChild(faqItem);
+    });
   }
-}
 
-// document.getElementById('icon-plus').addEventListener('click', function () {
-//   const svg = this;
-//   const extraText = document.getElementById('extraText');
-//   const useElement = svg.querySelector('use');
+  function getIconSrc() {
+    if (window.matchMedia('(min-width: 1440px)').matches) {
+      return './img/faq/minus.png';
+    } else {
+      return './img/faq/minus-mob.png';
+    }
+  }
 
-//   if (useElement.getAttribute('href') === 'icons.svg#plus') {
-//     useElement.setAttribute('href', 'icons.svg#minus');
-//     extraText.style.display = 'block';
-//   } else {
-//     useElement.setAttribute('href', 'icons.svg#plus');
-//     extraText.style.display = 'none';
-//   }
-// });
+  createFaqItems();
+
+  window.toggleText = function (imgElement) {
+    const extraText = imgElement
+      .closest('.faq-item')
+      .querySelector('.extraText');
+    if (imgElement.getAttribute('src') === './img/faq/plus.png') {
+      imgElement.setAttribute('src', getMinusIconSrc());
+      extraText.style.display = 'block';
+    } else {
+      imgElement.setAttribute('src', './img/faq/plus.png');
+      extraText.style.display = 'none';
+    }
+  };
+
+  function getMinusIconSrc() {
+    if (window.matchMedia('(min-width: 1440px)').matches) {
+      return './img/faq/minus.png';
+    } else {
+      return './img/faq/minus-mob.png';
+    }
+  }
+});

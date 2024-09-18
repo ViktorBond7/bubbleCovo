@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-carousel', {
     slidesPerView: 1,
     slidesPerGroup: 1,
-    // centeredSlides: true,
     loop: false,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -19,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     breakpoints: {
       1440: {
         slidesPerView: 4,
-        spaceBetween: 10,
-        // centeredSlides: 1,
+        spaceBetween: 70,
+        centeredSlides: 0,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -37,11 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
       swiper.params.pagination.el = null; // Убираем элемент пагинации
       swiper.update(); // Обновляем слайдер
     } else {
-      // Восстанавливаем пагинацию, если ширина больше или равна 1440px
       if (!swiper.params.pagination.el) {
         swiper.params.pagination.el = '.swiper-pagination'; // Устанавливаем элемент пагинации
-        swiper.pagination.init(); // Инициализируем пагинацию
-        swiper.pagination.update(); // Обновляем пагинацию
+        swiper.pagination.init();
+        swiper.pagination.update();
       }
     }
   }
