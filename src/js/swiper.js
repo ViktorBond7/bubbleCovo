@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  checkPagination(); // Выполняем проверку при загрузке
+  checkPagination();
   window.addEventListener('resize', checkPagination); // Проверяем при изменении размера окна
 });
