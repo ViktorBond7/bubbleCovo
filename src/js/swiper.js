@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  // Функция для проверки и настройки пагинации
   function checkPagination() {
     if (window.innerWidth < 1440) {
       swiper.pagination.destroy(); // Уничтожаем пагинацию для экранов меньше 1440px
