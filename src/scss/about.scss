@@ -2,9 +2,11 @@
   padding-top: 40px;
   padding-bottom: 40px;
   position: relative;
+  scroll-margin-top: 60px;
   @include media(desktop) {
     padding-top: 84px;
     padding-bottom: 80px;
+    scroll-margin-top: 100px;
   }
 }
 
@@ -46,21 +48,8 @@
   @include media(desktop) {
     // top: 44px;
     // left: 48px;
-    top: 0;
-    right: 0;
-  }
-}
-
-.bubble-about-bottom {
-  position: absolute;
-  bottom: 162px;
-  left: 0;
-
-  @include media(desktop) {
-    // bottom: 0;
-    // left: 1164px;
-    bottom: 0;
-    left: 0;
+    top: 40px;
+    left: 44px;
   }
 }
 
@@ -93,6 +82,26 @@
   }
 }
 
-// main {
-//   position: relative;
+.bubble-about-pool {
+  position: absolute;
+  opacity: 0;
+
+  @include media(desktop) {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    opacity: 0.4;
+  }
+}
+
+// .bubble-about-bottom {
+//   position: absolute;
+//   bottom: 162px;
+//   left: 0;
+
+//   @include media(desktop) {
+
+//     bottom: 0;
+//     left: 0;
+//   }
 // }

@@ -12,7 +12,6 @@
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: $_background-color;
   @include media(desktop) {
     max-width: 1440px;
     padding-left: 70px;
@@ -20,6 +19,6 @@
   }
 }
 
-// html {
-//   scroll-behavior: smooth;
-// }
+html {
+  scroll-behavior: smooth;
+}
