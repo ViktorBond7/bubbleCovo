@@ -8,7 +8,7 @@
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 
   max-width: 320px;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include media(desktop) {
     max-width: 100%;
