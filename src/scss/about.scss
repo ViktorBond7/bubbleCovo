@@ -3,10 +3,20 @@
   padding-bottom: 40px;
   position: relative;
   scroll-margin-top: 60px;
+
+  background-image: url(../img/about/bubble-mobt-x1.png),
+    url(../img/header/bubble-mob-1x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 212px 18px, -44px 643px;
+
   @include media(desktop) {
     padding-top: 84px;
     padding-bottom: 80px;
     scroll-margin-top: 100px;
+
+    background-image: url(../img/about/bubble-desk-rihtx1.png);
+    background-repeat: no-repeat;
+    background-position: 45px 42px;
   }
 }
 
@@ -89,19 +99,7 @@
   @include media(desktop) {
     position: absolute;
     bottom: -110px;
-    right: 0;
+    right: 65px;
     opacity: 0.6;
   }
 }
-
-// .bubble-about-bottom {
-//   position: absolute;
-//   bottom: 162px;
-//   left: 0;
-
-//   @include media(desktop) {
-
-//     bottom: 0;
-//     left: 0;
-//   }
-// }

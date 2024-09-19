@@ -4,6 +4,7 @@
   padding-top: 44px;
   align-items: center;
   max-width: 320px;
+  padding-bottom: 8px;
 
   @include media(desktop) {
     max-width: 1440px;
@@ -103,6 +104,7 @@
   transition: transform 0.2s ease-in-out;
   margin-left: auto;
   margin-right: auto;
+  background: #50c9fc;
 }
 
 .logo-mobile {
@@ -118,24 +120,12 @@
   flex-direction: column;
   width: 320px;
   padding: 44px 16px 0px 16px;
-  background: $_background-color;
+  // background: #50c9fc;
   position: relative;
-}
-.bubble-img-mobile {
-  position: absolute;
-  top: 100px;
-  left: 26px;
-  z-index: 1;
-  opacity: 0.6;
-  width: 104px;
-  pointer-events: none;
-}
 
-.bubble-img-litle-mobile {
-  position: absolute;
-  top: 490px;
-  left: 224px;
-  z-index: 1;
-  opacity: 0.6;
-  width: 70px;
+  background-image: url(../img/header/bubble-mob-1x.png),
+    url(../img/header/bubble-mob-1x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -5% 100px, 89% 490px;
+  background-size: 140px 140px, 93px 93px;
 }
