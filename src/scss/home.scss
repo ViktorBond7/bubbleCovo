@@ -37,10 +37,11 @@
 .link-google-play {
   display: flex;
   max-width: 134px;
-  height: 40px;
+  // height: 40px;
   justify-content: center;
   align-self: center;
   padding-top: 28px;
+  margin-bottom: 60px;
   @include media(desktop) {
     max-width: 294px;
     height: 86px;

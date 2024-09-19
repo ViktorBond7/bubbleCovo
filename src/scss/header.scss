@@ -3,17 +3,15 @@
   justify-content: space-between;
   padding-top: 44px;
   align-items: center;
-  justify-content: space-between;
-  width: 320px;
+  max-width: 320px;
 
   @include media(desktop) {
-    justify-content: space-between;
-    width: 1440px;
+    max-width: 1440px;
   }
 }
 
 .header-beg {
-  background-color: #3c98cc;
+  background: #50c9fc;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -120,7 +118,7 @@
   flex-direction: column;
   width: 320px;
   padding: 44px 16px 0px 16px;
-  background: #3c98cc;
+  background: $_background-color;
   position: relative;
 }
 .bubble-img-mobile {
@@ -130,6 +128,7 @@
   z-index: 1;
   opacity: 0.6;
   width: 104px;
+  pointer-events: none;
 }
 
 .bubble-img-litle-mobile {
