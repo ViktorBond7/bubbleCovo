@@ -76,13 +76,12 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
   header.addEventListener('click', function () {
     const content = this.nextElementSibling;
     const symbol = this.querySelector('.toggle-symbol');
-    const faqItem = this.parentElement; // отримуємо батьківський елемент
+    const faqItem = this.parentElement;
 
-    // Закриваємо всі інші елементи
     document.querySelectorAll('.faq-item-content').forEach(item => {
       if (item !== content) {
         item.classList.remove('active');
-        item.style.maxHeight = '0'; // Закриваємо інші елементи
+        item.style.maxHeight = '0'; /
         item.previousElementSibling.querySelector(
           '.toggle-symbol'
         ).textContent = '+';
@@ -95,17 +94,16 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
       }
     });
 
-    // Перемикання класу active для поточного елемента
     faqItem.classList.toggle('active');
     content.classList.toggle('active');
 
     if (content.classList.contains('active')) {
-      content.style.maxHeight = content.scrollHeight + 'px'; // Встановлюємо висоту для відкриття
+      content.style.maxHeight = content.scrollHeight + 'px';
       symbol.textContent = '-';
       symbol.classList.add('minus');
       symbol.style.backgroundColor = 'blue';
     } else {
-      content.style.maxHeight = '0'; // Закриваємо
+      content.style.maxHeight = '0';
       symbol.textContent = '+';
       symbol.classList.remove('minus');
       symbol.style.backgroundColor = 'yellow';

@@ -95,11 +95,11 @@
 }
 
 .faq-item-content.active {
-  max-height: 200px; /* Задайте максимальну висоту при відкритті */
+  max-height: 200px;
 }
 
 .faq-item.active .faq-item-content {
-  max-height: 500px; /* Досить велике значення, щоб покрити вміст */
+  max-height: 500px;
   opacity: 1;
 }
 
