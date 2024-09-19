@@ -3,7 +3,6 @@
   text-align: center;
   position: relative;
   margin-bottom: 32px;
-  scroll-margin-top: 60px;
 }
 
 .swiper-title {
@@ -57,9 +56,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  #swiper {
-    scroll-margin-top: 60px; /* Убедитесь, что это соответствует высоте вашего заголовка */
-  }
   .swiper-title {
     margin-top: 80px;
     padding-bottom: 26px;
