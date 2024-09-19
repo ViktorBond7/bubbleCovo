@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-carousel', {
     slidesPerView: 1,
     slidesPerGroup: 1,
+
     loop: false,
     navigation: {
       nextEl: '.swiper-button-next',
