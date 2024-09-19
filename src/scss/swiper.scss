@@ -2,7 +2,6 @@
   background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   text-align: center;
   position: relative;
-  margin-bottom: 32px;
 }
 
 .swiper-title {
@@ -25,14 +24,13 @@
 
 .swiper-carousel {
   padding-bottom: 32px;
-  width: 320px;
+  width: 153px;
   overflow-x: hidden;
   margin: 0 auto;
   justify-content: center;
 }
 .swiper-wrapper {
   display: flex;
-  padding-left: 56px;
 }
 
 .swiper-slide {
@@ -44,20 +42,12 @@
   display: none;
 }
 
-.swiper-carousel .swiper-button-prev {
-  left: 14px;
+.swiper-button-prev {
+  left: 32px;
 }
 
-.swiper-carousel .swiper-button-next {
-  right: 14px;
-}
-
-.swiper-carousel .swiper-button-prev {
-  left: calc(50% - 160px - 32px); /* Позиционируем на 32px от слайда */
-}
-
-.swiper-carousel .swiper-button-next {
-  right: calc(50% - 160px - 32px); /* Позиционируем на 32px от слайда */
+.swiper-button-next {
+  right: 32px;
 }
 
 @media screen and (min-width: 1440px) {
