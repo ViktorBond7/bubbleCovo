@@ -50,33 +50,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   links.forEach(link => {
     link.addEventListener('click', e => {
-      e.preventDefault(); // Отменяем стандартное поведение ссылки
-      const targetID = link.getAttribute('href').replace('#', ''); // Получаем ID целевой секции
-
-      // Обработка перехода на главную страницу
+      e.preventDefault();
+      const targetID = link.getAttribute('href').replace('#', '');
       if (link.getAttribute('href') === './index.html') {
         window.scrollTo({
           top: 0,
-          behavior: 'smooth', // Плавная прокрутка
+          behavior: 'smooth',
         });
-        return; // Прерываем выполнение
+        return;
       }
 
       const targetSection = document.getElementById(targetID);
 
       if (targetSection) {
-        const header = document.querySelector('header'); // Получаем элемент заголовка
-        const headerHeight = header ? header.offsetHeight : 0; // Получаем высоту заголовка
-        const topOffset = headerHeight; // Устанавливаем смещение равным высоте заголовка
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const topOffset = headerHeight;
         const targetPosition =
           targetSection.getBoundingClientRect().top +
           window.scrollY -
           topOffset;
 
-        // Прокрутка к целевой секции
         window.scrollTo({
           top: targetPosition,
-          behavior: 'smooth', // Плавная прокрутка
+          behavior: 'smooth',
         });
       }
     });
