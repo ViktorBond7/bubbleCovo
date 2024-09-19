@@ -81,7 +81,7 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
     document.querySelectorAll('.faq-item-content').forEach(item => {
       if (item !== content) {
         item.classList.remove('active');
-        item.style.maxHeight = '0'; /
+        item.style.maxHeight = '0';
         item.previousElementSibling.querySelector(
           '.toggle-symbol'
         ).textContent = '+';
