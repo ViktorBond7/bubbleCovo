@@ -40,9 +40,11 @@
   padding-top: 24px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 167%;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
   @include font(12, 20);
-  letter-spacing: 0px;
+  letter-spacing: 0.2px;
   color: #1e1e1e;
   @include media(desktop) {
     @include font(18, 27);
