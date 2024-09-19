@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     modules: [Navigation, Pagination],
-    speed: 500,
+    speed: 900,
     breakpoints: {
       1440: {
         slidesPerView: 4,
