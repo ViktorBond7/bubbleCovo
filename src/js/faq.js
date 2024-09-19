@@ -76,17 +76,39 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
   header.addEventListener('click', function () {
     const content = this.nextElementSibling;
     const symbol = this.querySelector('.toggle-symbol');
+    const faqItem = this.parentElement; // отримуємо батьківський елемент
 
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-      symbol.textContent = '+';
-      symbol.classList.remove('minus');
-      symbol.style.backgroundColor = 'yellow';
-    } else {
-      content.style.display = 'block';
+    // Закриваємо всі інші елементи
+    document.querySelectorAll('.faq-item-content').forEach(item => {
+      if (item !== content) {
+        item.classList.remove('active');
+        item.style.maxHeight = '0'; // Закриваємо інші елементи
+        item.previousElementSibling.querySelector(
+          '.toggle-symbol'
+        ).textContent = '+';
+        item.previousElementSibling
+          .querySelector('.toggle-symbol')
+          .classList.remove('minus');
+        item.previousElementSibling.querySelector(
+          '.toggle-symbol'
+        ).style.backgroundColor = 'yellow';
+      }
+    });
+
+    // Перемикання класу active для поточного елемента
+    faqItem.classList.toggle('active');
+    content.classList.toggle('active');
+
+    if (content.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px'; // Встановлюємо висоту для відкриття
       symbol.textContent = '-';
       symbol.classList.add('minus');
       symbol.style.backgroundColor = 'blue';
+    } else {
+      content.style.maxHeight = '0'; // Закриваємо
+      symbol.textContent = '+';
+      symbol.classList.remove('minus');
+      symbol.style.backgroundColor = 'yellow';
     }
   });
 });
