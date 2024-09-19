@@ -3,7 +3,8 @@
   text-align: center;
   position: relative;
   margin-bottom: 32px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 500px;
+  display: flex;
 }
 
 .swiper-title {
@@ -132,6 +133,6 @@
   }
 
   .swiper-carousel .swiper-button-next {
-    right: 90px; 
+    right: 90px;
   }
 }
