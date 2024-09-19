@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+}
+
 .terms {
   position: relative;
 
@@ -5,12 +11,12 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 60px;
-  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+  // background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 
   max-width: 320px;
 
   @include media(desktop) {
-    max-width: 1440px;
+    // max-width: 1440px;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
@@ -73,6 +79,8 @@
 
 @media screen and (min-width: 1440px) {
   .terms {
+    max-width: 1440px;
+
     padding-left: 182px;
     padding-right: 182px;
   }
@@ -126,6 +134,7 @@
     line-height: 57.6px;
     text-align: center;
   }
+
   .terms-item {
     padding-bottom: 24px;
     font-family: 'Chivo';
@@ -160,18 +169,10 @@
   z-index: 1;
   opacity: 0.6;
   width: 104px;
-}
-
-.bubble-img-home-2 {
-  position: absolute;
-  opacity: 0;
   @include media(desktop) {
-    z-index: 1;
-
-    opacity: 0.6;
-    width: 280px;
-    top: 93.5%;
-    left: 3%;
+    top: 93%;
+    left: 4%;
+    width: 282px;
   }
 }
 
@@ -199,10 +200,6 @@
   width: 70px;
 
   @include media(desktop) {
-    // opacity: 0.6;
-    // width: 150px;
-    // top: 96%;
-    // left: 70%;
     opacity: 0;
   }
 }
@@ -234,16 +231,16 @@
 
 .bubble-img-little-home-4 {
   position: absolute;
-  top: 90.6%;
-  left: -1%;
+  top: 90%;
+  left: 1%;
   z-index: 1;
   opacity: 0.6;
   width: 70px;
-
   @include media(desktop) {
     opacity: 0;
   }
 }
+
 .bubble-img-little-home-5 {
   position: absolute;
   top: 90%;
@@ -269,11 +266,11 @@
   padding-top: 41px;
   padding-bottom: 41px;
 
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
-  background-color: $_background-color;
+  // background-color: $_background-color;
 }
 
 .footer-list {
@@ -291,9 +288,6 @@
   align-items: center;
 }
 
-// .footer-item {
-// }
-
 @media screen and (min-width: 1440px) {
   .footer {
     font-size: 18px;
@@ -302,7 +296,7 @@
     padding-top: 96px;
     padding-bottom: 98px;
 
-    max-width: 1440px;
+    max-width: 100%;
     padding-left: 70px;
     padding-right: 70px;
   }
