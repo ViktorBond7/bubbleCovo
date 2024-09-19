@@ -10,7 +10,6 @@
   line-height: 34.56px;
   text-align: center;
   color: #1e1e1e;
-  padding-top: 32px;
   padding-bottom: 18px;
 }
 .faq-list {
@@ -181,10 +180,6 @@
   z-index: 0;
   opacity: 0.6;
   width: 70px;
-
-  // .container-fag-beg {
-  //   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
-  // }
 
   @include media(desktop) {
     top: -10%;
