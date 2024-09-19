@@ -57,10 +57,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper {
-    scroll-margin-top: 100px;
+  #swiper {
+    scroll-margin-top: 60px; /* Убедитесь, что это соответствует высоте вашего заголовка */
   }
-
   .swiper-title {
     margin-top: 80px;
     padding-bottom: 26px;
@@ -132,6 +131,6 @@
   }
 
   .swiper-carousel .swiper-button-next {
-    right: 90px; 
+    right: 90px;
   }
 }

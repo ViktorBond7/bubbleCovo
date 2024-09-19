@@ -45,4 +45,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   checkPagination();
   window.addEventListener('resize', checkPagination);
+
+  const links = document.querySelectorAll('.header-nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault(); // Отменяем стандартное поведение ссылки
+      const targetID = link.getAttribute('href').replace('#', ''); // Получаем ID целевой секции
+
+      // Обработка перехода на главную страницу
+      if (link.getAttribute('href') === './index.html') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // Плавная прокрутка
+        });
+        return; // Прерываем выполнение
+      }
+
+      const targetSection = document.getElementById(targetID);
+
+      if (targetSection) {
+        const header = document.querySelector('header'); // Получаем элемент заголовка
+        const headerHeight = header ? header.offsetHeight : 0; // Получаем высоту заголовка
+        const topOffset = headerHeight; // Устанавливаем смещение равным высоте заголовка
+        const targetPosition =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          topOffset;
+
+        // Прокрутка к целевой секции
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth', // Плавная прокрутка
+        });
+      }
+    });
+  });
 });
