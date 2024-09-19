@@ -34,13 +34,13 @@ body {
 }
 
 .policy-title {
-  font-family: 'Cherry Bomb One'; // Использование переменной для font-family
-  font-size: 36px; // Размер шрифта
-  font-weight: 600; // Толщина шрифта
-  line-height: 36px; // Высота строки
-  text-align: center; // Выравнивание по центру
-  color: #f2ff62; // Цвет текста
-  padding-bottom: 24px; // Отступ снизу
+  font-family: 'Cherry Bomb One';
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  color: #f2ff62;
+  padding-bottom: 24px;
 }
 
 .policy-subtitle {
@@ -224,7 +224,6 @@ body {
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
-  // background-color: $_background-color;
 }
 
 .footer-list {

@@ -3,7 +3,6 @@
   text-align: center;
   position: relative;
   margin-bottom: 32px;
-
   scroll-margin-top: 60px;
 }
 
@@ -27,11 +26,10 @@
 
 .swiper-carousel {
   padding-bottom: 32px;
-
-  width: calc(100% - 160px); // підставляєте ширину свайпера
+  width: calc(100% - 160px);
   overflow-x: hidden;
   margin: 0 auto;
-  justify-content: center; /* Центруємо картинки */
+  justify-content: center;
 }
 .swiper-wrapper {
   display: flex;
@@ -92,48 +90,48 @@
   }
 
   .swiper-carousel .swiper-pagination {
-    bottom: 10px; /* Расположение пагинации */
-    display: flex; /* Используем флекс для центрирования */
-    justify-content: center; /* Центрируем пагинацию */
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
     padding-bottom: 80px;
   }
 
   .swiper-carousel .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    margin: 0 4px; /* Добавим отступы между пулями */
+    margin: 0 4px;
     opacity: 0.3;
     background: #e4e4e4;
-    border-radius: 5px; /* Добавляем скругление для пуль */
-    transition: opacity 0.3s; /* Плавный переход для прозрачности */
+    border-radius: 5px;
+    transition: opacity 0.3s;
   }
 
   .swiper-carousel .swiper-pagination-bullet-active {
-    opacity: 1; /* Полная непрозрачность для активного элемента */
-    width: 24px; /* Увеличиваем ширину для активного элемента */
-    height: 12px; /* Высота для активного элемента */
-    background: #f2ff62; /* Цвет для активного элемента */
+    opacity: 1;
+    width: 24px;
+    height: 12px;
+    background: #f2ff62;
   }
 
   .swiper-carousel .swiper-pagination-bullet:active {
-    transform: scale(1.5); /* Увеличиваем размер при нажатии */
+    transform: scale(1.5);
   }
 
   .swiper-carousel {
     padding-bottom: 152px;
 
-    width: calc(100% - 300px); // підставляєте ширину свайпера
+    width: calc(100% - 300px);
     overflow-x: hidden;
     margin: 0 auto;
     padding-bottom: 152px;
-    justify-content: center; /* Центруємо картинки */
+    justify-content: center;
   }
 
   .swiper-carousel .swiper-button-prev {
-    left: 90px; /* Расстояние 90px от левого края контейнера */
+    left: 90px;
   }
 
   .swiper-carousel .swiper-button-next {
-    right: 90px; /* Расстояние 90px от правого края контейнера */
+    right: 90px; 
   }
 }
