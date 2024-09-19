@@ -76,17 +76,37 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
   header.addEventListener('click', function () {
     const content = this.nextElementSibling;
     const symbol = this.querySelector('.toggle-symbol');
+    const faqItem = this.parentElement;
 
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-      symbol.textContent = '+';
-      symbol.classList.remove('minus');
-      symbol.style.backgroundColor = 'yellow';
-    } else {
-      content.style.display = 'block';
+    document.querySelectorAll('.faq-item-content').forEach(item => {
+      if (item !== content) {
+        item.classList.remove('active');
+        item.style.maxHeight = '0';
+        item.previousElementSibling.querySelector(
+          '.toggle-symbol'
+        ).textContent = '+';
+        item.previousElementSibling
+          .querySelector('.toggle-symbol')
+          .classList.remove('minus');
+        item.previousElementSibling.querySelector(
+          '.toggle-symbol'
+        ).style.backgroundColor = 'yellow';
+      }
+    });
+
+    faqItem.classList.toggle('active');
+    content.classList.toggle('active');
+
+    if (content.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
       symbol.textContent = '-';
       symbol.classList.add('minus');
       symbol.style.backgroundColor = 'blue';
+    } else {
+      content.style.maxHeight = '0';
+      symbol.textContent = '+';
+      symbol.classList.remove('minus');
+      symbol.style.backgroundColor = 'yellow';
     }
   });
 });

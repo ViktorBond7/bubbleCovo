@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-carousel', {
     slidesPerView: 1,
     slidesPerGroup: 1,
+
     loop: false,
     navigation: {
-      nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next',
     },
     modules: [Navigation, Pagination],
     speed: 900,
@@ -45,4 +46,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   checkPagination();
   window.addEventListener('resize', checkPagination);
+
+  const links = document.querySelectorAll('.header-nav-link');
+
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetID = link.getAttribute('href').replace('#', '');
+      if (link.getAttribute('href') === './index.html') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+        return;
+      }
+
+      const targetSection = document.getElementById(targetID);
+
+      if (targetSection) {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 0;
+        const topOffset = headerHeight;
+        const targetPosition =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          topOffset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth',
+        });
+      }
+    });
+  });
 });
