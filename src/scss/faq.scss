@@ -11,6 +11,9 @@
   text-align: center;
   color: #1e1e1e;
   padding-bottom: 18px;
+  @include media(desktop) {
+    font-size: 40px;
+  }
 }
 
 .faq-list {
