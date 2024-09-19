@@ -1,5 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+}
+
 .policy {
   position: relative;
+  overflow: hidden;
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
@@ -9,13 +16,10 @@
   max-width: 320px;
 
   @include media(desktop) {
-    max-width: 100%;
+    max-width: 1440px;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
-
-    // margin-left: 0;
-    // margin-right: 0;
   }
 }
 
@@ -75,7 +79,6 @@
 
 @media screen and (min-width: 1440px) {
   .policy {
-    max-width: 100%;
     padding-left: 182px;
     padding-right: 182px;
   }
@@ -219,12 +222,11 @@
   padding-top: 41px;
   padding-bottom: 41px;
 
-  max-width: 320px;
+  max-width: 1000%;
+  margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
   background-color: $_background-color;
-
-  margin: 0 auto;
 }
 
 .footer-list {
@@ -247,13 +249,13 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    max-width: 100%;
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.02em;
     padding-top: 96px;
     padding-bottom: 98px;
 
+    max-width: 1440px;
     padding-left: 70px;
     padding-right: 70px;
   }

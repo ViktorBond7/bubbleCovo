@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+}
+
 .terms {
   position: relative;
 
@@ -5,13 +11,11 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 60px;
-  background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
 
   max-width: 320px;
   // overflow: hidden;
 
   @include media(desktop) {
-    max-width: 100%;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
@@ -74,7 +78,7 @@
 
 @media screen and (min-width: 1440px) {
   .terms {
-    max-width: 100%;
+    max-width: 1440px;
     padding-left: 182px;
     padding-right: 182px;
   }
@@ -257,7 +261,7 @@
   padding-top: 41px;
   padding-bottom: 41px;
 
-  max-width: 320px;
+  max-width: 1000%;
   margin: 0 auto;
   padding-left: 18px;
   padding-right: 18px;
