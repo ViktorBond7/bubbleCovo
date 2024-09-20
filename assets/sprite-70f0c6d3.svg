@@ -3,12 +3,13 @@
     <symbol id="icon-burger-menu" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-width="2.909" d="M5.818 7.273h20.364M5.818 14.545h20.364M5.818 21.818h20.364"/>
     </symbol>
-    <symbol id="icon-chevron-left" viewBox="0 0 17 32">
-      <path fill="none" stroke="#f2ff62" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.706" d="m5.782 27.608 5.154-9.412-5.154-9.412" style="stroke:var(--color1, #f2ff62)"/>
-    </symbol>
-    <symbol id="icon-chevron-right" viewBox="0 0 11 32">
-      <path fill="none" stroke="#f2ff62" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.934" d="m7.756 7.344-4.309 7.869 4.309 7.869" style="stroke:var(--color1, #f2ff62)"/>
-    </symbol>
+   <symbol id="icon-chevron-right-1" viewBox="0 0 11 32">
+<path fill="none" stroke="#f2ff62" style="stroke: var(--color1, #f2ff62)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.9057" d="M7.724 7.488l-4.278 7.812 4.278 7.812"></path>
+</symbol>
+
+    <symbol id="icon-chevron-right" viewBox="0 0 17 32">
+<path fill="none" stroke="#f2ff62" style="stroke: var(--color1, #f2ff62)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.6652" d="M5.77 27.605l5.11-9.33-5.11-9.33"></path>
+</symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.909" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
