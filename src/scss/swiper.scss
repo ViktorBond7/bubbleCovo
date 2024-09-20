@@ -3,6 +3,10 @@
   position: relative;
   display: flex;
   justify-content: center;
+  text-align: center;
+}
+.container-swiper-background {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
 }
 
 .container-swiper-background {
@@ -51,6 +55,7 @@
   left: 32px;
   // width: 155px;
   // height: 100px;
+  // left: 32px;
 }
 
 .swiper-button-next {

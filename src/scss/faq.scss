@@ -11,9 +11,11 @@
   line-height: 34.56px;
   text-align: center;
   color: #1e1e1e;
+  padding-top: 32px;
   padding-bottom: 18px;
   @include media(desktop) {
     font-size: 40px;
+    margin-top: 32px;
   }
 }
 
@@ -193,7 +195,7 @@
 
 .bubble-img-little-home-10 {
   position: absolute;
-  top: 1%;
+  top: 4%;
   left: 82%;
   z-index: 1;
   opacity: 0.6;

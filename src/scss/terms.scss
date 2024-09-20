@@ -2,6 +2,15 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(179.98deg, #50c9fc 42.39%, #4afff4 191.83%);
+
+  position: relative;
+}
+.bubble {
+  position: absolute;
+  border-radius: 50%; /* Щоб зробити бульбашки круглими */
+  background-image: url('/img/bubble-1x.png'); /* Путь до вашого зображення бульбашки */
+  background-size: cover;
+  opacity: 0.6;
 }
 
 .terms {
