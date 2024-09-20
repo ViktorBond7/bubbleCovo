@@ -1,10 +1,11 @@
 .faq {
   position: relative;
   scroll-margin-top: 100px;
+  overflow: hidden;
 }
 
 .faq-title {
-  font-family: Baloo Chettan;
+  font-family: $_font_size_baloo;
   font-size: 24px;
   font-weight: 800;
   line-height: 34.56px;
@@ -14,7 +15,6 @@
   padding-bottom: 18px;
   @include media(desktop) {
     font-size: 40px;
-
     margin-top: 32px;
   }
 }
@@ -230,4 +230,7 @@
     height: 154px;
     background-image: url('/img/bubble-1x.png');
   }
+}
+.container-fag-beg {
+  overflow: hidden;
 }
