@@ -149,9 +149,9 @@ body {
   opacity: 0.6;
   width: 104px;
   height: 104px; /* Додайте висоту для блоку */
-  // background-image: url('/img/bubble-1x.png');
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bubble-1x.png');
+  background-size: cover;
+  background-position: center;
 
   @include media(desktop) {
     top: 8.5%;
@@ -170,9 +170,9 @@ body {
   opacity: 0.6;
   width: 104px;
   height: 104px;
-  // background-image: url('/img/bubble-1x.png');
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bubble-1x.png');
+  background-size: cover;
+  background-position: center;
   @include media(desktop) {
     opacity: 0;
   }
@@ -186,9 +186,9 @@ body {
   opacity: 0.6;
   width: 70px;
   height: 70px;
-  // background-image: url('/img/bubble-1x.png');
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bubble-1x.png');
+  background-size: cover;
+  background-position: center;
 
   @include media(desktop) {
     top: 97%;
@@ -206,9 +206,9 @@ body {
   opacity: 0.6;
   width: 70px;
   height: 70px;
-  // background-image: url('/img/bubble-1x.png');
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bubble-1x.png');
+  background-size: cover;
+  background-position: center;
   @include media(desktop) {
     opacity: 0;
   }
@@ -222,9 +222,9 @@ body {
   opacity: 0.6;
   width: 70px;
   height: 70px;
-  // background-image: url('/img/bubble-1x.png');
-  // background-size: cover;
-  // background-position: center;
+  background-image: url('/img/bubble-1x.png');
+  background-size: cover;
+  background-position: center;
   @include media(desktop) {
     opacity: 0;
   }
