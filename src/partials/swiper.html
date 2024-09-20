@@ -1,41 +1,47 @@
-<section class="swiper" id="swiper">
-  <div class="swiper-header">
-    <h2 class="swiper-title">Gallery</h2>
-    <p class="swiper-description">
-      Immerse yourself in the beautiful, frosty landscapes of Ice Crush 2 and
-      experience the magic of winter with every match!
-    </p>
-  </div>
-
-  <div class="swiper-carousel">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-1.png" alt="photo-1" loading="lazy" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-2.png" alt="photo-2" loading="lazy" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-3.png" alt="photo-3" loading="lazy" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-4.png" alt="photo-4" loading="lazy" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-5.png" alt="photo-5" loading="lazy" />
-      </div>
-      <div class="swiper-slide">
-        <img src="./img/swiper/photo-6.png" alt="photo-6" loading="lazy" />
-      </div>
+<section class="container-swiper-background">
+  <div class="swiper container" id="swiper">
+    <div class="swiper-header">
+      <h2 class="swiper-title">Gallery</h2>
+      <p class="swiper-description">
+        Immerse yourself in the beautiful, frosty landscapes of Ice Crush 2 and
+        experience the magic of winter with every match!
+      </p>
     </div>
 
-    <div class="swiper-button-next">
-      <img src="/img/chevron-right.png" alt="Next" />
-    </div>
-    <div class="swiper-button-prev">
-      <img src="/img/chevron-left.png" alt="Previous" />
-    </div>
+    <div class="swiper-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-1.png" alt="photo-1" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-2.png" alt="photo-2" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-3.png" alt="photo-3" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-4.png" alt="photo-4" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-5.png" alt="photo-5" loading="lazy" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper/photo-6.png" alt="photo-6" loading="lazy" />
+        </div>
+      </div>
 
-    <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <svg class="burger-svg" width="54" height="54" aria-label="">
+          <use href="./img/sprite.svg#icon-chevron-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="burger-svg" width="84" height="84" aria-label="">
+          <use href="./img/sprite.svg#icon-chevron-right-1"></use>
+        </svg>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>

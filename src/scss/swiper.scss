@@ -1,21 +1,24 @@
 .swiper {
-  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
   text-align: center;
   position: relative;
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
 }
 
+.container-swiper-background {
+  background: linear-gradient(180deg, #8747ff 5.5%, #5d24c6 100%);
+}
 .swiper-title {
   margin-top: 32px;
   padding-bottom: 8px;
-  font-family: 'Baloo Chettan';
+  font-family: $_font_size_baloo;
   font-size: 24px;
   font-weight: 800;
   color: #ffffff;
 }
 
 .swiper-description {
-  font-family: Chivo;
+  // font-family: Chivo;
   font-size: 12px;
   color: #efefef;
   max-width: 260px;
@@ -25,14 +28,13 @@
 
 .swiper-carousel {
   padding-bottom: 32px;
-  width: 320px;
+  width: 155px;
   overflow-x: hidden;
   margin: 0 auto;
   justify-content: center;
 }
 .swiper-wrapper {
   display: flex;
-  padding-left: 56px;
 }
 
 .swiper-slide {
@@ -44,27 +46,22 @@
   display: none;
 }
 
-.swiper-carousel .swiper-button-prev {
-  left: 14px;
+.swiper-button-prev {
+  display: flex;
+  left: 32px;
+  // width: 155px;
+  // height: 100px;
 }
 
-.swiper-carousel .swiper-button-next {
-  right: 14px;
-}
-
-.swiper-carousel .swiper-button-prev {
-  left: calc(50% - 160px - 32px); /* Позиционируем на 32px от слайда */
-}
-
-.swiper-carousel .swiper-button-next {
-  right: calc(50% - 160px - 32px); /* Позиционируем на 32px от слайда */
+.swiper-button-next {
+  right: 32px;
 }
 
 @media screen and (min-width: 1440px) {
   .swiper-title {
     margin-top: 80px;
     padding-bottom: 26px;
-    font-family: 'Baloo Chettan';
+    font-family: $_font_size_baloo;
     font-size: 40px;
     font-weight: 400;
 
@@ -137,3 +134,7 @@
     right: 90px;
   }
 }
+// .swiper-header {
+//   display: flex;
+//   justify-content: center;
+// }
