@@ -14,7 +14,7 @@ body {
   max-width: 320px;
 
   @include media(desktop) {
-    max-width: 1440px;
+    max-width: 1280px;
     padding-left: 70px;
     padding-right: 70px;
     padding-top: 100px;
@@ -75,7 +75,7 @@ body {
   padding-bottom: 12px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .policy {
     padding-left: 182px;
     padding-right: 182px;
@@ -263,7 +263,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .footer {
     font-size: 18px;
     line-height: 27px;
