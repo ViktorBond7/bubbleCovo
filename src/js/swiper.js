@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modules: [Navigation, Pagination],
     speed: 900,
     breakpoints: {
-      1440: {
+      1280: {
         slidesPerView: 4,
         spaceBetween: 70,
         centeredSlides: 0,
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function checkPagination() {
-    if (window.innerWidth < 1440) {
+    if (window.innerWidth < 1280) {
       swiper.pagination.destroy();
       swiper.params.pagination.el = null;
       swiper.update();
