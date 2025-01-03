@@ -82,15 +82,13 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
       if (item !== content) {
         item.classList.remove('active');
         item.style.maxHeight = '0';
-        item.previousElementSibling.querySelector(
-          '.toggle-symbol'
-        ).textContent = '+';
-        item.previousElementSibling
-          .querySelector('.toggle-symbol')
-          .classList.remove('minus');
-        item.previousElementSibling.querySelector(
-          '.toggle-symbol'
-        ).style.backgroundColor = 'yellow';
+        const otherSymbol =
+          item.previousElementSibling.querySelector('.toggle-symbol');
+        otherSymbol.textContent = '+';
+        otherSymbol.classList.remove('minus');
+        otherSymbol.style.backgroundColor = 'yellow';
+        otherSymbol.style.borderRadius = '0px';
+        otherSymbol.style.color = '#8747ff';
       }
     });
 
@@ -102,11 +100,15 @@ document.querySelectorAll('.faq-item-header').forEach(header => {
       symbol.textContent = '-';
       symbol.classList.add('minus');
       symbol.style.backgroundColor = 'blue';
+      symbol.style.borderRadius = '4px'; // Додано радіус
+      symbol.style.color = 'white'; // Текст білий
     } else {
       content.style.maxHeight = '0';
       symbol.textContent = '+';
       symbol.classList.remove('minus');
       symbol.style.backgroundColor = 'yellow';
+      symbol.style.borderRadius = '0px'; // Додано радіус
+      symbol.style.color = '#8747ff'; // Текст білий
     }
   });
 });
